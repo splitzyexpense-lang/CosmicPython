@@ -34,15 +34,8 @@ export default function AppDownload({
   const handleDownload = (platform?: "ios" | "android") => {
     const targetPlatform = platform || userOS;
     
-    // TODO: Replace with actual app store URLs when available
-    const urls = {
-      ios: "https://apps.apple.com/app/astralux",
-      android: "https://play.google.com/store/apps/details?id=com.astralux.app",
-    };
-
-    if (targetPlatform !== "unknown") {
-      window.open(urls[targetPlatform], "_blank");
-    }
+    // Show coming soon message since app isn't published yet
+    alert("🚀 Astralux mobile app is coming soon! We're putting the finishing touches on the app and will notify users when it's available on the App Store and Google Play Store. Stay tuned!");
     
     onDownload?.();
   };
