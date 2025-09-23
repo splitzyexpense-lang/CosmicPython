@@ -91,12 +91,21 @@ export default function Footer() {
             </div>
           </div>
           
-          <div className="mt-6 p-4 bg-secondary/20 rounded-lg border border-border">
-            <p className="text-xs text-muted-foreground text-center leading-relaxed" data-testid="footer-disclaimer">
-              <strong className="text-foreground">Important Disclaimer:</strong> Astralux (ASLX) is a utility token for ecosystem participation. 
-              Content on this website is for informational purposes only and does not constitute financial advice. 
-              Cryptocurrency investments carry inherent risks. Always Do Your Own Research (DYOR) before making any financial decisions.
-            </p>
+          <div className="mt-6 p-6 bg-secondary/20 rounded-lg border border-border">
+            <div className="text-xs text-muted-foreground leading-relaxed space-y-3" data-testid="footer-disclaimer">
+              <div className="text-center">
+                <strong className="text-foreground text-sm">Disclaimer</strong>
+                <p className="text-xs mt-1">Last Updated: September 24, 2025</p>
+              </div>
+              
+              <p>
+                The information provided on this website is for informational purposes only and does not constitute financial, investment, or legal advice. The Astralux (ASLX) token is a utility token intended for use within the Astralux application ecosystem.
+              </p>
+              
+              <p>
+                Engaging with cryptocurrencies involves significant risk, including the risk of complete loss. The value of digital assets can be highly volatile. You should conduct your own research and consult with a qualified professional before making any financial decisions. The project team makes no warranties or representations about the future performance or value of the ASLX token. All features and plans, including those outlined in the project documentation, are subject to change.
+              </p>
+            </div>
           </div>
         </div>
       </div>
