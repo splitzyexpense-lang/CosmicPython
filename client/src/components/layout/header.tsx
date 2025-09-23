@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Activity, FileText } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
+import { useLiveStats } from "@/hooks/use-live-stats";
 import astraluxLogo from "@assets/Gemini_Generated_Image_gyglfjgyglfjgygl_1758656370567.png";
 
 const navigation = [
@@ -19,11 +20,12 @@ const navigation = [
 export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { data: liveStats } = useLiveStats();
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="grid grid-cols-[auto,1fr,auto] items-center h-16 gap-8">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" data-testid="logo-link">
@@ -38,8 +40,8 @@ export default function Header() {
             </Link>
           </div>
           
-          {/* Navigation (Desktop) */}
-          <nav className="hidden md:flex items-center space-x-8" data-testid="desktop-nav">
+          {/* Navigation (Desktop) - Centered */}
+          <nav className="hidden md:flex items-center justify-center space-x-6 justify-self-center" data-testid="desktop-nav">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <Button
@@ -57,21 +59,47 @@ export default function Header() {
             ))}
           </nav>
           
-          {/* CTA Button (Desktop) */}
-          <div className="hidden md:flex items-center ml-8">
-            <AppDownload 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-md font-medium transition-all hover:scale-105 cosmic-glow"
-              data-testid="download-app-header"
-            />
-          </div>
-          
-          {/* Mobile menu button */}
-          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="md:hidden" data-testid="mobile-menu-trigger">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
+          {/* Right Side Cluster - Contains both desktop cluster and mobile menu */}
+          <div className="flex items-center justify-end">
+            {/* Desktop Right Side Cluster */}
+            <div className="hidden md:flex items-center space-x-3">
+              {/* Live Stats Pill */}
+              {liveStats && (
+                <div className="flex items-center space-x-2 bg-secondary/30 text-muted-foreground px-3 py-1.5 rounded-full text-sm border border-border/50" data-testid="live-stats-pill">
+                  <Activity className="h-3 w-3 text-primary" />
+                  <span className="font-mono">{(liveStats.totalMiners / 1000).toFixed(1)}k miners</span>
+                  <span className="text-border">•</span>
+                  <span className="font-mono">{(liveStats.totalMined / 1000).toFixed(0)}k mined</span>
+                </div>
+              )}
+              
+              {/* Whitepaper Button */}
+              <Link href="/whitepaper">
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  className="border-primary/20 text-muted-foreground hover:text-foreground hover:bg-primary/5 transition-all"
+                  data-testid="button-whitepaper-header"
+                >
+                  <FileText className="h-4 w-4 mr-1.5" />
+                  Whitepaper
+                </Button>
+              </Link>
+              
+              {/* Primary CTA */}
+              <AppDownload 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium transition-all hover:scale-105 cosmic-glow"
+                data-testid="download-app-header"
+              />
+            </div>
+            
+            {/* Mobile menu button */}
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm" className="md:hidden" data-testid="mobile-menu-trigger">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
             <SheetContent side="right" className="w-80" data-testid="mobile-menu">
               <div className="flex flex-col space-y-4 mt-8">
                 {/* Mobile Navigation */}
@@ -94,8 +122,20 @@ export default function Header() {
                   ))}
                 </nav>
                 
-                {/* Mobile CTA */}
-                <div className="pt-4 border-t border-border">
+                {/* Mobile CTA & Additional Links */}
+                <div className="pt-4 border-t border-border space-y-3">
+                  <Link href="/whitepaper">
+                    <Button 
+                      variant="outline" 
+                      className="w-full justify-start text-left border-primary/20 text-muted-foreground hover:text-foreground hover:bg-primary/5"
+                      onClick={() => setMobileMenuOpen(false)}
+                      data-testid="button-whitepaper-mobile"
+                    >
+                      <FileText className="h-4 w-4 mr-2" />
+                      Whitepaper
+                    </Button>
+                  </Link>
+                  
                   <AppDownload 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium transition-all"
                     data-testid="download-app-mobile"
@@ -104,6 +144,7 @@ export default function Header() {
               </div>
             </SheetContent>
           </Sheet>
+          </div>
         </div>
       </div>
     </header>
