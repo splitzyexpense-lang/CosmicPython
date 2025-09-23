@@ -59,40 +59,37 @@ export default function Terms() {
               <p>
                 The Service allows you to earn cryptocurrency tokens through a "proof-of-engagement" model. The Service is funded entirely by revenue from advertisements shown within the App.
               </p>
-
-              <h3>A. Mining and "ASLX mini"</h3>
-              <ul>
-                <li>To earn rewards, you must tap the "Mine" button in the App and successfully view a rewarded advertisement.</li>
-                <li>Each successful mining session rewards your account with one (1) in-app token called "ASLX mini".</li>
-                <li>After a successful mining session, the "Mine" button will be disabled for a one-hour cooldown period.</li>
-                <li>"ASLX mini" are in-app tokens and do not have any monetary value outside of the Service until they are converted into ASLX tokens as described below. Your global rank within the App is based on your total "ASLX mini" balance.</li>
-              </ul>
-
-              <h3>B. Bonuses</h3>
-              <ul>
-                <li><strong>Sign-In Bonus:</strong> New users receive a one-time bonus of 100 ASLX mini upon their first successful sign-in.</li>
-                <li><strong>Streak Bonus:</strong> You will receive a bonus of 100 ASLX mini for maintaining a continuous 10-day mining streak.</li>
-                <li><strong>Referral Bonus:</strong> You will receive a bonus of 250 ASLX mini for each new user who signs up using your referral code. This bonus is only credited to your account after the referred user has successfully mined at least 200 ASLX mini themselves.</li>
-              </ul>
-
-              <h3>C. Conversion of ASLX mini to ASLX</h3>
-              <ul>
-                <li>You may convert your ASLX mini into the official Astralux (ASLX) cryptocurrency token.</li>
-                <li>The conversion rate is fixed: 1,000 ASLX mini are required to convert into 1 ASLX token.</li>
-                <li>Upon conversion, the ASLX token amount will be credited to your off-chain in-app aslxBalance.</li>
-              </ul>
-
-              <h3>D. Withdrawal of ASLX Tokens</h3>
-              <ul>
-                <li>You may request to withdraw your ASLX tokens from your in-app balance to a personal, on-chain cryptocurrency wallet.</li>
-                <li><strong>Minimum Withdrawal Amount:</strong> A withdrawal request can only be made if your aslxBalance is at least 10 ASLX.</li>
-                <li><strong>Withdrawal Prerequisites:</strong> To be eligible for a withdrawal, you must:
-                  <ul>
-                    <li>Have linked a valid personal EVM-compatible wallet address to your account.</li>
-                    <li>Have successfully completed a one-time phone number verification process. The server will reject withdrawal requests from users who have not verified their phone number.</li>
-                  </ul>
-                </li>
-              </ul>
+              
+              <p><strong>A. Mining and "ASLX mini"</strong></p>
+              <p>
+                To earn rewards, you must tap the "Mine" button in the App and successfully view a rewarded advertisement.
+                Each successful mining session rewards your account with one (1) in-app token called "ASLX mini".
+                After a successful mining session, the "Mine" button will be disabled for a one-hour cooldown period.
+                "ASLX mini" are in-app tokens and do not have any monetary value outside of the Service until they are converted into ASLX tokens as described below. Your global rank within the App is based on your total "ASLX mini" balance.
+              </p>
+              
+              <p><strong>B. Bonuses</strong></p>
+              <p>
+                Sign-In Bonus: New users receive a one-time bonus of 100 ASLX mini upon their first successful sign-in.
+                Streak Bonus: You will receive a bonus of 100 ASLX mini for maintaining a continuous 10-day mining streak.
+                Referral Bonus: You will receive a bonus of 250 ASLX mini for each new user who signs up using your referral code. This bonus is only credited to your account after the referred user has successfully mined at least 200 ASLX mini themselves.
+              </p>
+              
+              <p><strong>C. Conversion of ASLX mini to ASLX</strong></p>
+              <p>
+                You may convert your ASLX mini into the official Astralux (ASLX) cryptocurrency token.
+                The conversion rate is fixed: 1,000 ASLX mini are required to convert into 1 ASLX token.
+                Upon conversion, the ASLX token amount will be credited to your off-chain in-app aslxBalance.
+              </p>
+              
+              <p><strong>D. Withdrawal of ASLX Tokens</strong></p>
+              <p>
+                You may request to withdraw your ASLX tokens from your in-app balance to a personal, on-chain cryptocurrency wallet.
+                Minimum Withdrawal Amount: A withdrawal request can only be made if your aslxBalance is at least 10 ASLX.
+                Withdrawal Prerequisites: To be eligible for a withdrawal, you must:
+                Have linked a valid personal EVM-compatible wallet address to your account.
+                Have successfully completed a one-time phone number verification process. The server will reject withdrawal requests from users who have not verified their phone number.
+              </p>
             </CardContent>
           </Card>
 
@@ -102,12 +99,12 @@ export default function Terms() {
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>You agree not to:</p>
-              <ul>
-                <li>Use any automated means, such as bots or scripts, to interact with the Service.</li>
-                <li>Attempt to bypass the one-hour mining cooldown or any other security measures.</li>
-                <li>Create multiple accounts or engage in any fraudulent activity to manipulate the rewards system.</li>
-                <li>Use the Service for any illegal or unauthorized purpose.</li>
-              </ul>
+              <p>
+                Use any automated means, such as bots or scripts, to interact with the Service.
+                Attempt to bypass the one-hour mining cooldown or any other security measures.
+                Create multiple accounts or engage in any fraudulent activity to manipulate the rewards system.
+                Use the Service for any illegal or unauthorized purpose.
+              </p>
               <p>
                 Violation of these rules may result in the suspension or termination of your account and the forfeiture of any accumulated balances.
               </p>
