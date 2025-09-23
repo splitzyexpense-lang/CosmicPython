@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Search, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
 import astraluxLogo from "@assets/Gemini_Generated_Image_gyglfjgyglfjgygl_1758656370567.png";
@@ -19,14 +18,7 @@ const navigation = [
 
 export default function Header() {
   const [location] = useLocation();
-  const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: Implement search functionality
-    console.log("Search query:", searchQuery);
-  };
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50" data-testid="header">
@@ -44,21 +36,6 @@ export default function Header() {
                 />
               </div>
             </Link>
-          </div>
-          
-          {/* Search Bar (Desktop) */}
-          <div className="hidden md:block flex-1 max-w-2xl mx-8">
-            <form onSubmit={handleSearch} className="relative">
-              <Input
-                type="search"
-                placeholder="Search documentation..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 bg-input border border-border text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                data-testid="search-input"
-              />
-              <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
-            </form>
           </div>
           
           {/* Navigation (Desktop) */}
@@ -97,19 +74,6 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-80" data-testid="mobile-menu">
               <div className="flex flex-col space-y-4 mt-8">
-                {/* Mobile Search */}
-                <form onSubmit={handleSearch} className="relative">
-                  <Input
-                    type="search"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-10"
-                    data-testid="mobile-search-input"
-                  />
-                  <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
-                </form>
-                
                 {/* Mobile Navigation */}
                 <nav className="flex flex-col space-y-2" data-testid="mobile-nav">
                   {navigation.map((item) => (
