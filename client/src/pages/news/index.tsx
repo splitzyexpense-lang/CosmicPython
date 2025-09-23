@@ -7,7 +7,7 @@ const newsUpdates = [
   {
     title: "Get Ready for Launch! The Astralux App Arrives October 3rd! 🚀",
     slug: "app-launch-october-3rd",
-    excerpt: "Mark your calendars! We are thrilled to announce the official launch date for the Astralux mobile app. On Friday, October 3rd, 2025, the app will be available for download on both iOS and Android devices.",
+    excerpt: "Mark your calendars! We are thrilled to announce the official launch date for the Astralux mobile app. On Friday, October 3rd, 2025, the app will be available for download on both iOS and Android devices. Prepare to start your journey to earn real ASLX cryptocurrency simply by engaging with the app. Be among the first to join our community, start mining your ASLX Mini rewards, and build your 10-day streak for a bonus.",
     date: "September 24, 2025",
     category: "Product Update",
     featured: true
@@ -15,62 +15,14 @@ const newsUpdates = [
   {
     title: "It's Official: ASLX Token is Live on the Polygon Network! ✅",
     slug: "aslx-token-live-polygon",
-    excerpt: "We have reached a foundational milestone for the Astralux project. On September 15th, 2025, the official Astralux (ASLX) ERC-20 smart contract was successfully deployed to the Polygon network.",
+    excerpt: "We have reached a foundational milestone for the Astralux project. On September 15th, 2025, the official Astralux (ASLX) ERC-20 smart contract was successfully deployed to the Polygon network. A total supply of 3,300,000 ASLX has been minted. In line with our community-first approach, 75% of this supply (2,475,000 ASLX) is allocated to the Airdrop Rewards Wallet.",
     date: "September 15, 2025",
     category: "Technology",
     featured: true
-  },
-  {
-    title: "Astralux Mobile App Beta Testing Begins",
-    slug: "app-launch-beta",
-    excerpt: "We're excited to announce the start of beta testing for the Astralux mobile app. Selected users can now experience our revolutionary ad-to-earn platform.",
-    date: "December 15, 2024",
-    category: "Product Update",
-    featured: false
-  },
-  {
-    title: "Smart Contract Audit Completed Successfully",
-    slug: "audit-completed",
-    excerpt: "Our smart contracts have passed comprehensive security audits with no critical issues found. Full audit report now available for public review.",
-    date: "December 8, 2024",
-    category: "Security",
-    featured: false
-  },
-  {
-    title: "Partnership Announcement: Major Ad Networks Integration",
-    slug: "ad-network-partnerships",
-    excerpt: "Astralux has secured partnerships with leading mobile ad networks to ensure a steady stream of high-quality rewarded advertisements for our users.",
-    date: "November 28, 2024",
-    category: "Partnership",
-    featured: false
-  },
-  {
-    title: "Tokenomics Finalized: 3.3M Fixed Supply Confirmed",
-    slug: "tokenomics-final",
-    excerpt: "We've finalized our tokenomics with a fixed supply of 3,300,000 ASLX tokens, ensuring scarcity and long-term value for early adopters.",
-    date: "November 15, 2024",
-    category: "Tokenomics",
-    featured: false
-  },
-  {
-    title: "Polygon Network Integration Complete",
-    slug: "polygon-integration",
-    excerpt: "ASLX smart contracts are now live on Polygon mainnet, enabling fast and cost-effective transactions for all users.",
-    date: "October 30, 2024",
-    category: "Technology",
-    featured: false
-  },
-  {
-    title: "Community Discord Server Launched",
-    slug: "discord-launch",
-    excerpt: "Join our growing community on Discord to connect with other Astralux users, get support, and stay updated on the latest developments.",
-    date: "October 15, 2024",
-    category: "Community",
-    featured: false
   }
 ];
 
-const categories = ["All", "Product Update", "Security", "Partnership", "Tokenomics", "Technology", "Community"];
+const categories = ["All", "Product Update", "Technology"];
 
 export default function NewsIndex() {
   // In a real implementation, this would use the posts from getAllPosts()
