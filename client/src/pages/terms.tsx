@@ -7,254 +7,176 @@ export default function Terms() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Terms of Service
+            Astralux Terms of Service
           </h1>
           <p className="text-xl text-muted-foreground">
-            Last updated: December 15, 2024
+            Last Updated: September 24, 2025
           </p>
         </div>
 
         <div className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>Agreement to Terms</CardTitle>
+              <CardTitle>Introduction</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                These Terms of Service ("Terms") govern your use of the Astralux mobile application and website (the "Service") operated by Astralux Foundation ("we," "us," or "our"). By accessing or using our Service, you agree to be bound by these Terms.
+                Welcome to Astralux. These Terms of Service ("Terms") govern your access to and use of the Astralux mobile application (the "App") and any related services (collectively, the "Service") provided by us. Please read these Terms carefully before using our Service.
               </p>
               <p>
-                If you disagree with any part of these Terms, then you may not access the Service. These Terms apply to all visitors, users, and others who access or use the Service.
+                By creating an account or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not use the Service.
               </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Eligibility</CardTitle>
+              <CardTitle>1. Eligibility</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>To use our Service, you must:</p>
-              <ul>
-                <li>Be at least 18 years old (or the age of majority in your jurisdiction)</li>
-                <li>Have the legal capacity to enter into a binding contract</li>
-                <li>Not be prohibited from using the Service under applicable laws</li>
-                <li>Reside in a jurisdiction where cryptocurrency activities are legal</li>
-                <li>Provide accurate and truthful information during registration</li>
-              </ul>
-              <p>By using the Service, you represent and warrant that you meet these eligibility requirements.</p>
+              <p>
+                You must be at least 18 years old or the age of legal majority in your jurisdiction to create an account and use the Service. By using the Service, you represent and warrant that you meet this requirement.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Account Registration and Security</CardTitle>
+              <CardTitle>2. Account Registration and Security</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <h3>Account Creation</h3>
-              <p>To access certain features of the Service, you must create an account. You agree to:</p>
-              <ul>
-                <li>Provide accurate, current, and complete information</li>
-                <li>Maintain and update your information as needed</li>
-                <li>Maintain only one account per person</li>
-                <li>Not share your account with others</li>
-              </ul>
-
-              <h3>Account Security</h3>
-              <p>You are responsible for:</p>
-              <ul>
-                <li>Maintaining the confidentiality of your account credentials</li>
-                <li>All activities that occur under your account</li>
-                <li>Notifying us immediately of any unauthorized access</li>
-                <li>Ensuring your device security and wallet protection</li>
-              </ul>
+              <p>
+                To use the Service, you must create an account using Google Sign-In. You are responsible for maintaining the confidentiality of your Google account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>ASLX Tokens and Earning Mechanism</CardTitle>
+              <CardTitle>3. The Astralux Service</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <h3>Token Nature</h3>
-              <p>ASLX tokens are utility tokens designed for ecosystem participation. They are not:</p>
+              <p>
+                The Service allows you to earn cryptocurrency tokens through a "proof-of-engagement" model. The Service is funded entirely by revenue from advertisements shown within the App.
+              </p>
+
+              <h3>A. Mining and "ASLX mini"</h3>
               <ul>
-                <li>Investment securities or financial instruments</li>
-                <li>Guaranteed to have any specific value</li>
-                <li>Promises of future profits or returns</li>
-                <li>Legal tender or currency</li>
+                <li>To earn rewards, you must tap the "Mine" button in the App and successfully view a rewarded advertisement.</li>
+                <li>Each successful mining session rewards your account with one (1) in-app token called "ASLX mini".</li>
+                <li>After a successful mining session, the "Mine" button will be disabled for a one-hour cooldown period.</li>
+                <li>"ASLX mini" are in-app tokens and do not have any monetary value outside of the Service until they are converted into ASLX tokens as described below. Your global rank within the App is based on your total "ASLX mini" balance.</li>
               </ul>
 
-              <h3>Earning Through Advertisements</h3>
-              <p>Users can earn mini-tokens by watching rewarded advertisements. We reserve the right to:</p>
+              <h3>B. Bonuses</h3>
               <ul>
-                <li>Set daily limits on ad views and earnings</li>
-                <li>Modify reward rates and earning mechanisms</li>
-                <li>Suspend or terminate accounts for abuse</li>
-                <li>Implement anti-fraud measures</li>
+                <li><strong>Sign-In Bonus:</strong> New users receive a one-time bonus of 100 ASLX mini upon their first successful sign-in.</li>
+                <li><strong>Streak Bonus:</strong> You will receive a bonus of 100 ASLX mini for maintaining a continuous 10-day mining streak.</li>
+                <li><strong>Referral Bonus:</strong> You will receive a bonus of 250 ASLX mini for each new user who signs up using your referral code. This bonus is only credited to your account after the referred user has successfully mined at least 200 ASLX mini themselves.</li>
               </ul>
 
-              <h3>Token Distribution</h3>
-              <p>Airdrops are processed in batches and subject to:</p>
+              <h3>C. Conversion of ASLX mini to ASLX</h3>
               <ul>
-                <li>Verification of legitimate earning activity</li>
-                <li>Network conditions and gas fees</li>
-                <li>Our operational schedules and procedures</li>
-                <li>Compliance with applicable regulations</li>
+                <li>You may convert your ASLX mini into the official Astralux (ASLX) cryptocurrency token.</li>
+                <li>The conversion rate is fixed: 1,000 ASLX mini are required to convert into 1 ASLX token.</li>
+                <li>Upon conversion, the ASLX token amount will be credited to your off-chain in-app aslxBalance.</li>
+              </ul>
+
+              <h3>D. Withdrawal of ASLX Tokens</h3>
+              <ul>
+                <li>You may request to withdraw your ASLX tokens from your in-app balance to a personal, on-chain cryptocurrency wallet.</li>
+                <li><strong>Minimum Withdrawal Amount:</strong> A withdrawal request can only be made if your aslxBalance is at least 10 ASLX.</li>
+                <li><strong>Withdrawal Prerequisites:</strong> To be eligible for a withdrawal, you must:
+                  <ul>
+                    <li>Have linked a valid personal EVM-compatible wallet address to your account.</li>
+                    <li>Have successfully completed a one-time phone number verification process. The server will reject withdrawal requests from users who have not verified their phone number.</li>
+                  </ul>
+                </li>
               </ul>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Prohibited Conduct</CardTitle>
+              <CardTitle>4. User Conduct and Responsibilities</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>You agree not to engage in any of the following prohibited activities:</p>
+              <p>You agree not to:</p>
               <ul>
-                <li>Creating multiple accounts or using automated systems</li>
-                <li>Manipulating or exploiting the earning mechanism</li>
-                <li>Using VPNs or other tools to circumvent geographic restrictions</li>
-                <li>Engaging in fraudulent or deceptive practices</li>
-                <li>Violating any applicable laws or regulations</li>
-                <li>Interfering with the Service's operation or security</li>
-                <li>Harassing or abusing other users or our support team</li>
-                <li>Attempting to reverse engineer or hack the Service</li>
+                <li>Use any automated means, such as bots or scripts, to interact with the Service.</li>
+                <li>Attempt to bypass the one-hour mining cooldown or any other security measures.</li>
+                <li>Create multiple accounts or engage in any fraudulent activity to manipulate the rewards system.</li>
+                <li>Use the Service for any illegal or unauthorized purpose.</li>
               </ul>
+              <p>
+                Violation of these rules may result in the suspension or termination of your account and the forfeiture of any accumulated balances.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Intellectual Property Rights</CardTitle>
+              <CardTitle>5. Wallet Security</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>The Service and its original content, features, and functionality are owned by Astralux Foundation and are protected by international copyright, trademark, and other intellectual property laws.</p>
-              <p>You may not:</p>
-              <ul>
-                <li>Copy, modify, or distribute our content without permission</li>
-                <li>Use our trademarks or logos without authorization</li>
-                <li>Create derivative works based on our Service</li>
-                <li>Remove or alter any proprietary notices</li>
-              </ul>
+              <p>
+                The App allows you to generate or import a non-custodial EVM wallet. You are solely responsible for the security of your wallet, including your private keys and mnemonic (seed) phrase. We store these credentials in an encrypted format on your device only (flutter_secure_storage) and never have access to them. We cannot recover your wallet, private keys, or any funds if you lose them.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Third-Party Services</CardTitle>
+              <CardTitle>6. Disclaimers</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>Our Service may contain links to third-party websites, applications, or services, including:</p>
-              <ul>
-                <li>Cryptocurrency wallets and exchanges</li>
-                <li>Advertisement networks and partners</li>
-                <li>Social media platforms</li>
-                <li>Analytics and support tools</li>
-              </ul>
-              <p>We are not responsible for the content, privacy policies, or practices of any third-party services. Your use of third-party services is at your own risk.</p>
+              <p>
+                THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE SERVICE, INCLUDING BUT NOT LIMITED TO THE FUTURE VALUE OF THE ASLX TOKEN. THE VALUE OF CRYPTOCURRENCIES IS HIGHLY VOLATILE AND CAN RESULT IN SIGNIFICANT FINANCIAL LOSS. THE SERVICE IS NOT INTENDED TO PROVIDE ANY FINANCIAL OR INVESTMENT ADVICE.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Disclaimers and Risks</CardTitle>
+              <CardTitle>7. Limitation of Liability</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <h3>Service Availability</h3>
-              <p>We provide the Service on an "as is" and "as available" basis. We do not warrant that:</p>
-              <ul>
-                <li>The Service will be uninterrupted or error-free</li>
-                <li>All features will always be available</li>
-                <li>Token values will remain stable or increase</li>
-                <li>Earnings will continue at current rates</li>
-              </ul>
-
-              <h3>Cryptocurrency Risks</h3>
-              <p>Cryptocurrency activities involve significant risks, including:</p>
-              <ul>
-                <li>Price volatility and potential total loss of value</li>
-                <li>Regulatory changes that may affect token utility</li>
-                <li>Technical risks related to blockchain technology</li>
-                <li>Market risks and lack of liquidity</li>
-              </ul>
+              <p>
+                TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL ASTRALUX OR ITS AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (A) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE; OR (B) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION STORED THEREIN.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Limitation of Liability</CardTitle>
+              <CardTitle>8. Termination</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>To the maximum extent permitted by law, Astralux Foundation and its affiliates shall not be liable for any:</p>
-              <ul>
-                <li>Indirect, incidental, or consequential damages</li>
-                <li>Loss of profits, data, or business opportunities</li>
-                <li>Damages resulting from third-party actions</li>
-                <li>Technical failures or service interruptions</li>
-                <li>Cryptocurrency price fluctuations or market losses</li>
-              </ul>
-              <p>Our total liability for any claims related to the Service shall not exceed $100 USD.</p>
+              <p>
+                We reserve the right to suspend or terminate your account at our sole discretion, without notice, for any conduct that we believe violates these Terms or is otherwise harmful to other users of the Service, us, or third parties.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Termination</CardTitle>
+              <CardTitle>9. Changes to Terms</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We may terminate or suspend your account and access to the Service immediately, without prior notice, for any reason, including:</p>
-              <ul>
-                <li>Violation of these Terms</li>
-                <li>Fraudulent or abusive behavior</li>
-                <li>Legal or regulatory requirements</li>
-                <li>Extended periods of inactivity</li>
-              </ul>
-              <p>Upon termination, your right to use the Service ceases immediately. However, earned tokens already distributed to your wallet remain yours.</p>
+              <p>
+                We may modify these Terms at any time. We will provide notice of such changes by updating the "Last Updated" date. Your continued use of the Service after any modification constitutes your acceptance of the new Terms.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Governing Law and Disputes</CardTitle>
+              <CardTitle>10. Contact Us</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>These Terms shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to conflict of law principles.</p>
-              <p>Any disputes arising from or relating to these Terms or the Service shall be resolved through binding arbitration, except for:</p>
-              <ul>
-                <li>Claims for injunctive relief</li>
-                <li>Intellectual property disputes</li>
-                <li>Small claims court matters</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Changes to Terms</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We reserve the right to modify or replace these Terms at any time. We will provide notice of material changes by:</p>
-              <ul>
-                <li>Posting updated Terms on our website</li>
-                <li>Sending email notifications to registered users</li>
-                <li>Displaying notices within the mobile application</li>
-              </ul>
-              <p>Your continued use of the Service after any changes constitutes acceptance of the new Terms.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>If you have any questions about these Terms, please contact us:</p>
-              <ul>
-                <li><strong>Email:</strong> legal@astralux.org</li>
-                <li><strong>Support:</strong> <a href="/support" className="text-primary hover:text-primary/80">Submit a support ticket</a></li>
-                <li><strong>Address:</strong> [Company Address]</li>
-              </ul>
+              <p>
+                If you have any questions about these Terms, please contact us through the channels provided on our website.
+              </p>
             </CardContent>
           </Card>
         </div>
