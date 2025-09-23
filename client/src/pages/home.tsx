@@ -264,7 +264,7 @@ export default function Home() {
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold mb-4">
-                  <span className="text-primary">>>> </span>Astralux Foundation
+                  <span className="text-primary">{'>>> '}</span>Astralux Foundation
                 </h2>
               </div>
               

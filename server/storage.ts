@@ -85,7 +85,8 @@ export class MemStorage implements IStorage {
   async updateLiveStats(insertStats: InsertLiveStats): Promise<LiveStats> {
     const stats: LiveStats = {
       id: "live",
-      ...insertStats,
+      totalMiners: insertStats.totalMiners,
+      totalMined: insertStats.totalMined,
       lastUpdated: new Date(),
     };
     this.liveStats = stats;
