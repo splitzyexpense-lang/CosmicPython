@@ -20,55 +20,56 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] bg-gradient-to-br from-background to-card overflow-hidden">
+      <section className="relative min-h-[50vh] bg-gradient-to-br from-background to-card overflow-hidden">
         <StarfieldAnimation />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
           <div className="text-center">
             {/* Large Main Logo */}
-            <div className="mb-8 flex justify-center">
+            <div className="mb-4 sm:mb-6 flex justify-center">
               <img 
                 src={astraluxMainLogo} 
                 alt="Astralux ASLX Logo" 
-                className="w-48 h-48 md:w-64 md:h-64 object-contain animate-float cosmic-glow"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain animate-float cosmic-glow"
                 data-testid="astralux-main-logo"
               />
             </div>
             
             <h1 
-              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent animate-float"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent animate-float"
               data-testid="hero-title"
             >
               Get Started with Astralux
             </h1>
-            <p 
-              className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
-              data-testid="hero-description"
-            >
-              Astralux is a mobile application designed to simplify entry into the cryptocurrency world by allowing users to earn tokens with no financial investment. The platform operates on a "proof-of-engagement" model where users can "mine" an in-app currency called ASLX mini by tapping a button and viewing a rewarded advertisement once every hour.
-            </p>
-            <p 
-              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
-            >
-              Once a user accumulates 1,000 ASLX mini, they can convert them into 1 real Astralux (ASLX) token. ASLX is an ERC-20 token on the Polygon network with a fixed total supply of{" "}
-              <span className="text-primary font-mono font-semibold">3,300,000</span>. To ensure network efficiency, users can withdraw their real ASLX tokens to a personal wallet after their balance reaches a minimum of 10 ASLX.
-            </p>
-            <p 
-              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
-            >
-              The entire project is sustainably funded by the revenue from the in-app ads. To encourage consistent participation, Astralux offers bonuses, including a 100-token reward for a continuous 10-day mining streak and a 250-token reward for successful referrals. The user's global rank on the platform is determined by their total balance of ASLX mini.
-            </p>
+            <div className="max-w-4xl mx-auto mb-6 sm:mb-8 space-y-3 sm:space-y-4">
+              <p 
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed"
+                data-testid="hero-description"
+              >
+                Astralux is a mobile application designed to simplify entry into the cryptocurrency world by allowing users to earn tokens with no financial investment. The platform operates on a "proof-of-engagement" model where users can "mine" an in-app currency called ASLX mini by tapping a button and viewing a rewarded advertisement once every hour.
+              </p>
+              <p 
+                className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed"
+              >
+                Once a user accumulates 1,000 ASLX mini, they can convert them into 1 real Astralux (ASLX) token. ASLX is an ERC-20 token on the Polygon network with a fixed total supply of{" "}
+                <span className="text-primary font-mono font-semibold">3,300,000</span>. To ensure network efficiency, users can withdraw their real ASLX tokens to a personal wallet after their balance reaches a minimum of 10 ASLX.
+              </p>
+              <p 
+                className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed"
+              >
+                The entire project is sustainably funded by the revenue from the in-app ads. To encourage consistent participation, Astralux offers bonuses, including a 100-token reward for a continuous 10-day mining streak and a 250-token reward for successful referrals. The user's global rank on the platform is determined by their total balance of ASLX mini.
+              </p>
+            </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <AppDownload 
                 onDownload={handleDownloadClick}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 cosmic-glow"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg transition-all hover:scale-105 cosmic-glow"
                 data-testid="button-download-hero"
               />
               <Link href="/tokenomics">
                 <Button 
                   variant="outline" 
-                  size="lg" 
-                  className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105"
+                  className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg transition-all hover:scale-105"
                   onClick={handleTokenomicsClick}
                   data-testid="button-tokenomics-hero"
                 >
