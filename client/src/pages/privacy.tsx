@@ -7,10 +7,10 @@ export default function Privacy() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Privacy Policy
+            Astralux Privacy Policy
           </h1>
           <p className="text-xl text-muted-foreground">
-            Last updated: December 15, 2024
+            Effective Date: September 24, 2025
           </p>
         </div>
 
@@ -21,184 +21,113 @@ export default function Privacy() {
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                Astralux Foundation ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the "Service").
-              </p>
-              <p>
-                By using our Service, you consent to the data practices described in this Privacy Policy. If you do not agree with the practices described in this Privacy Policy, please do not access or use our Service.
+                Welcome to Astralux ("we," "us," or "our"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App") and our services. Please read this policy carefully.
               </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Information We Collect</CardTitle>
+              <CardTitle>1. Information We Collect</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <h3>Personal Information</h3>
-              <p>When you create an account or use our Service, we may collect:</p>
-              <ul>
-                <li>Email address for account creation and communication</li>
-                <li>Google account information (if you choose to sign in with Google)</li>
-                <li>Wallet addresses for token distribution</li>
-                <li>Contact information when you reach out for support</li>
-              </ul>
-
-              <h3>Device Information</h3>
-              <p>We automatically collect certain information about your device and usage:</p>
-              <ul>
-                <li>Device identifiers (for anti-fraud and fair usage enforcement)</li>
-                <li>IP address and general location information</li>
-                <li>App usage statistics and interaction data</li>
-                <li>Device type, operating system, and app version</li>
-              </ul>
-
-              <h3>Ad Interaction Data</h3>
-              <p>When you watch rewarded advertisements:</p>
-              <ul>
-                <li>Ad completion status and interaction metrics</li>
-                <li>Advertising identifiers provided by your device</li>
-                <li>General demographic information for ad targeting</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>How We Use Your Information</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We use the collected information for the following purposes:</p>
-              <ul>
-                <li><strong>Service Provision:</strong> To provide and maintain our earning platform</li>
-                <li><strong>Token Distribution:</strong> To process and distribute ASLX token airdrops</li>
-                <li><strong>Fair Usage:</strong> To prevent abuse and ensure fair token distribution</li>
-                <li><strong>Communication:</strong> To send important updates about your account and the service</li>
-                <li><strong>Customer Support:</strong> To respond to your inquiries and provide assistance</li>
-                <li><strong>Analytics:</strong> To understand how users interact with our Service and improve it</li>
-                <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Information Sharing and Disclosure</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We do not sell, trade, or otherwise transfer your personal information to third parties except in the following circumstances:</p>
+              <p>We collect information that is essential for the functionality of the App and to provide you with our services.</p>
               
-              <h3>Service Providers</h3>
-              <p>We may share information with trusted third-party service providers who assist us in:</p>
-              <ul>
-                <li>Ad network partnerships for rewarded advertisement delivery</li>
-                <li>Cloud hosting and data storage (Firebase, Google Cloud)</li>
-                <li>Analytics and app performance monitoring</li>
-                <li>Customer support and communication tools</li>
-              </ul>
+              <h3>A. Information You Provide Directly:</h3>
+              <p><strong>Account Information:</strong> When you create an account using Google Sign-In, we collect your display name and photo URL as provided by Google. We also generate a unique user ID and store timestamps for when your account was created and when you last logged in.</p>
+              
+              <p><strong>Phone Number:</strong> To enable the withdrawal feature and enhance account security, we require you to verify your phone number. We store your verified phone number and a verification status flag (isPhoneVerified) associated with your account.</p>
+              
+              <p><strong>Wallet Address:</strong> When you create or import a wallet within the App, your public EVM wallet address is linked to your user profile in our database to facilitate the withdrawal of ASLX tokens.</p>
 
-              <h3>Legal Requirements</h3>
-              <p>We may disclose your information if required to do so by law or in the good faith belief that such action is necessary to:</p>
+              <h3>B. Information Collected Automatically:</h3>
+              <p><strong>Usage and App Data:</strong> We automatically collect data related to your in-app activity. This includes your "ASLX mini" balance, your real "ASLX" balance, mining session timestamps, your 10-day streak progress, and your global rank. We also log transaction history for conversions and withdrawals.</p>
+              
+              <p><strong>Referral Information:</strong> If you participate in our referral program, we track the users you have invited and their progress towards meeting the referral bonus conditions (mining at least 200 app coins).</p>
+              
+              <p><strong>Device and Analytics Information:</strong> We use services like Firebase Analytics to collect data about your device, such as your device model, operating system, and general usage patterns, to help us improve the App.</p>
+
+              <h3>C. Information Stored Locally on Your Device:</h3>
+              <p><strong>Secure Wallet Credentials:</strong> When you create a wallet, your BIP-39 mnemonic (seed phrase) is generated and stored in your device's encrypted secure storage (flutter_secure_storage). We never have access to, transmit, or store your private keys or seed phrases on our servers. Access to this information on your device is protected by biometric authentication (Face ID or Fingerprint).</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>2. How We Use Your Information</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>We use the information we collect for the following purposes:</p>
               <ul>
-                <li>Comply with legal process or government requests</li>
-                <li>Protect and defend our rights or property</li>
-                <li>Prevent fraud or abuse of our Service</li>
-                <li>Protect the personal safety of users or the public</li>
+                <li><strong>To Provide and Manage the Service:</strong> To operate the mining function, manage your in-app balances, process conversions from "ASLX mini" to ASLX tokens, and facilitate withdrawal requests.</li>
+                <li><strong>To Secure Your Account:</strong> To authenticate you, prevent fraud, and secure your account through measures like required phone verification for withdrawals.</li>
+                <li><strong>To Communicate With You:</strong> To send you push notifications about your mining status or referral reminders, which you can manage in the App's settings.</li>
+                <li><strong>To Support Our Business Model:</strong> The App's operation and your rewards are funded exclusively by showing advertisements from Google Mobile Ads. Information may be used by our ad partners to provide relevant ads.</li>
+                <li><strong>To Improve Our App:</strong> To analyze usage trends and feedback to enhance the user experience and develop new features.</li>
               </ul>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Data Security</CardTitle>
+              <CardTitle>3. How We Share Your Information</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We implement appropriate security measures to protect your personal information:</p>
+              <p>We do not sell your personal information. We may share your information in the following situations:</p>
               <ul>
-                <li>Encryption of data in transit and at rest</li>
-                <li>Regular security audits and vulnerability assessments</li>
-                <li>Access controls and authentication requirements</li>
-                <li>Secure cloud infrastructure with industry-standard protections</li>
+                <li><strong>With Service Providers:</strong> We share information with third-party vendors and service providers that support our business, such as Google (for Firebase services like Authentication, Firestore, and Analytics) and Google Mobile Ads.</li>
+                <li><strong>For Legal Reasons:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.</li>
               </ul>
-              <p>However, please note that no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Your Privacy Rights</CardTitle>
+              <CardTitle>4. Data Security</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+              <p>We implement a variety of security measures to maintain the safety of your personal information. Our backend infrastructure utilizes Firestore Security Rules to protect your data from unauthorized access. Sensitive information, such as your wallet's seed phrase, is stored only on your device in an encrypted format. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>5. Your Choices and Rights</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>You have certain rights regarding the personal information we hold about you. You can:</p>
               <ul>
-                <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
-                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
-                <li><strong>Deletion:</strong> Request deletion of your personal information (subject to legal requirements)</li>
-                <li><strong>Portability:</strong> Request transfer of your data to another service provider</li>
-                <li><strong>Opt-out:</strong> Unsubscribe from marketing communications</li>
+                <li>Access and update your profile information through the App.</li>
+                <li>Manage your push notification preferences in the App's settings.</li>
+                <li>Log out of your account or request account deletion.</li>
               </ul>
-              <p>To exercise these rights, please contact us at privacy@astralux.org.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Data Retention</CardTitle>
+              <CardTitle>6. Children's Privacy</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We retain your personal information only as long as necessary to:</p>
-              <ul>
-                <li>Provide our Service and fulfill the purposes outlined in this Privacy Policy</li>
-                <li>Comply with legal obligations and resolve disputes</li>
-                <li>Prevent fraud and maintain security</li>
-              </ul>
-              <p>Account data is typically retained for the duration of your active use of the Service plus 3 years after account closure, unless longer retention is required by law.</p>
+              <p>Our services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Children's Privacy</CardTitle>
+              <CardTitle>7. Changes to This Privacy Policy</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>Our Service is not intended for children under the age of 13 (or the minimum age in your jurisdiction). We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+              <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>International Data Transfers</CardTitle>
+              <CardTitle>8. Contact Us</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>Your information may be transferred to and stored on servers located outside your country of residence. By using our Service, you consent to such transfers. We ensure that appropriate safeguards are in place to protect your information during international transfers.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Changes to This Privacy Policy</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-              <ul>
-                <li>Posting the updated Privacy Policy on our website</li>
-                <li>Sending an email notification to your registered email address</li>
-                <li>Displaying a prominent notice in our mobile application</li>
-              </ul>
-              <p>Your continued use of the Service after any changes constitutes acceptance of the updated Privacy Policy.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-              <ul>
-                <li><strong>Email:</strong> privacy@astralux.org</li>
-                <li><strong>Support:</strong> <a href="/support" className="text-primary hover:text-primary/80">Submit a support ticket</a></li>
-                <li><strong>Discord:</strong> <a href="https://discord.gg/astralux" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Join our community</a></li>
-              </ul>
+              <p>If you have any questions about this Privacy Policy, please contact us through the support channels provided on our website.</p>
             </CardContent>
           </Card>
         </div>
