@@ -1,62 +1,58 @@
 export const faqData = [
+  // General Questions
   {
-    question: "What is Astralux (ASLX)?",
-    answer: "Astralux is a mobile-first cryptocurrency that allows users to earn ASLX tokens by watching rewarded advertisements. It's built on the Polygon network for fast, low-cost transactions and has a fixed supply of 3,300,000 tokens."
+    question: "What is Astralux?",
+    answer: "Astralux is a mobile application that allows you to earn a real cryptocurrency, ASLX, through a simulated mining experience. By engaging with the app and viewing ads, you can accumulate in-app currency that is convertible to ASLX tokens on the Polygon blockchain."
   },
   {
-    question: "How do I start earning ASLX tokens?",
-    answer: "Download the Astralux mobile app from the App Store or Google Play, create an account, complete verification, and start watching rewarded ads. You'll earn mini-tokens that can be converted to ASLX tokens at a 1000:1 ratio."
+    question: "Is the Astralux app free to use?",
+    answer: "Yes, the app is completely free. The project's revenue and operational costs are covered by the ads shown within the application."
   },
   {
-    question: "Is Astralux secure?",
-    answer: "Yes, Astralux prioritizes security through multiple measures: audited smart contracts, self-custody wallet integration, Polygon network security, and transparent tokenomics. Users maintain full control of their tokens."
+    question: "Is ASLX a real cryptocurrency?",
+    answer: "Yes, ASLX is an ERC-20 token deployed on the Polygon network. You earn an in-app currency called ASLX Mini first, which you can later convert into real ASLX tokens."
+  },
+  
+  // Earning & Mining
+  {
+    question: "How do I earn rewards in the app?",
+    answer: "You earn rewards by tapping the 'Mine' button on the main screen. Each time you start a mining session, you'll watch a rewarded ad and receive 1 ASLX Mini."
   },
   {
-    question: "How many ads can I watch per day?",
-    answer: "The current daily limit is 20 ads per user to ensure fair distribution and prevent abuse. Each ad typically earns 10-50 mini-tokens depending on length and engagement."
+    question: "What is the difference between ASLX Mini and ASLX?",
+    answer: "ASLX Mini is the in-app reward currency you earn from mining. ASLX is the official cryptocurrency on the Polygon blockchain. You can convert 1,000 ASLX Mini into 1 real ASLX token within the app."
   },
   {
-    question: "What is the referral program?",
-    answer: "Invite friends using your unique referral code and earn 10% of their daily earnings plus a 500 mini-token bonus for each successful referral. There's no limit to the number of people you can refer."
+    question: "How often can I mine?",
+    answer: "You can start a new mining session once every hour. The mine button will become active again 60 minutes after your last session began."
   },
   {
-    question: "How do streak bonuses work?",
-    answer: "Maintain daily activity to unlock progressive multipliers: Days 1-7 have a 1x multiplier, days 8-30 have a 1.5x multiplier, and day 31+ have a 2x multiplier on all earnings."
+    question: "Are there any bonuses?",
+    answer: "Yes, there are two ways to earn bonus rewards: Streak Bonus - If you mine consecutively for 10 days, you will receive a bonus of 100 ASLX Mini. Referral Bonus - You receive 250 ASLX Mini for every new user who signs up with your referral code and successfully mines at least 200 ASLX Mini."
+  },
+  
+  // Wallet & Withdrawals
+  {
+    question: "How do I withdraw my ASLX tokens?",
+    answer: "The withdrawal process has two steps: Convert - First, you must convert your ASLX Mini to ASLX inside the app's wallet screen at a rate of 1000:1. Request Withdrawal - Once you have accumulated at least 10 ASLX, you can request a withdrawal to your own Polygon-compatible wallet."
   },
   {
-    question: "When will airdrops be processed?",
-    answer: "Airdrops are processed in batches every 24-48 hours to optimize gas costs. You can request an airdrop once you've accumulated 1000 mini-tokens (equivalent to 1 ASLX)."
+    question: "What is the minimum withdrawal amount?",
+    answer: "The minimum amount required to request a withdrawal is 10 ASLX. You must also have your phone number verified to complete the request."
   },
   {
-    question: "Can I trade ASLX tokens?",
-    answer: "ASLX tokens will be available for trading on decentralized exchanges starting in Q2 2026. Until then, tokens can be held, staked (starting Q1 2026), or used for in-app features."
+    question: "What kind of wallet do I need?",
+    answer: "You will need a Polygon network-compatible (EVM) wallet to receive your ASLX tokens. The app will include a feature to create or import a secure wallet directly within it."
+  },
+  
+  // The ASLX Token
+  {
+    question: "What is the total supply of ASLX?",
+    answer: "The total supply is fixed at 3,300,000 ASLX. A significant portion, 75% (2,475,000 ASLX), is allocated for community airdrop rewards through the mining app."
   },
   {
-    question: "What wallet should I use?",
-    answer: "We recommend MetaMask, Trust Wallet, or any Polygon-compatible wallet. The app will guide you through wallet setup and connection during the onboarding process."
-  },
-  {
-    question: "Is this a financial investment?",
-    answer: "No, Astralux is a utility token for ecosystem participation, not an investment product. Earnings from watching ads should be viewed as rewards for engagement, not investment returns. Always DYOR (Do Your Own Research)."
-  },
-  {
-    question: "What are the system requirements?",
-    answer: "The Astralux app requires iOS 12+ or Android 8+, internet connection, and approximately 50MB of storage space. No special hardware or technical knowledge is needed."
-  },
-  {
-    question: "How is Astralux different from Pi Network?",
-    answer: "Unlike Pi Network, ASLX tokens are already live on the Polygon blockchain, have a fixed supply, and generate immediate utility through our ad-supported earning model. No waiting for mainnet launch."
-  },
-  {
-    question: "What happens if I miss a day?",
-    answer: "Missing a day will reset your streak bonus back to day 1. However, you don't lose any earned mini-tokens or ASLX tokens - only the multiplier resets."
-  },
-  {
-    question: "Are there any fees?",
-    answer: "The app is free to use. Polygon network transaction fees for airdrops are minimal (typically under $0.01) and are covered by the platform during batch processing."
-  },
-  {
-    question: "Can I use multiple accounts?",
-    answer: "No, our fair usage policy allows one account per person. Multiple accounts detected through device fingerprinting or verification will result in account suspension."
+    question: "When will ASLX be listed on an exchange?",
+    answer: "The team plans to pursue a listing on a decentralized exchange (DEX) after the community has successfully mined and claimed 1,800,000 ASLX tokens through the app's reward system."
   }
 ];
+
