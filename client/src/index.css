@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cosmic Dark Theme Colors */
+  --background: hsl(225, 30%, 6%);
+  --foreground: hsl(215, 16%, 92%);
+  --card: hsl(225, 25%, 10%);
+  --card-foreground: hsl(215, 16%, 92%);
+  --popover: hsl(225, 25%, 10%);
+  --popover-foreground: hsl(215, 16%, 92%);
+  --primary: hsl(282, 44%, 47%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(225, 25%, 15%);
+  --secondary-foreground: hsl(215, 16%, 92%);
+  --muted: hsl(225, 25%, 15%);
+  --muted-foreground: hsl(215, 8%, 70%);
+  --accent: hsl(282, 44%, 47%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(348, 80%, 58%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(225, 20%, 20%);
+  --input: hsl(225, 20%, 20%);
+  --ring: hsl(282, 44%, 47%);
+  --radius: 0.5rem;
+  
+  /* Astralux Custom Colors */
+  --astralux-purple: hsl(282, 44%, 47%);
+  --astralux-purple-hover: hsl(282, 44%, 57%);
+  --astralux-success: hsl(159, 100%, 36%);
+  --astralux-warning: hsl(348, 80%, 58%);
+  
+  /* Font families */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+.dark {
+  --background: hsl(225, 30%, 6%);
+  --foreground: hsl(215, 16%, 92%);
+  --card: hsl(225, 25%, 10%);
+  --card-foreground: hsl(215, 16%, 92%);
+  --popover: hsl(225, 25%, 10%);
+  --popover-foreground: hsl(215, 16%, 92%);
+  --primary: hsl(282, 44%, 47%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(225, 25%, 15%);
+  --secondary-foreground: hsl(215, 16%, 92%);
+  --muted: hsl(225, 25%, 15%);
+  --muted-foreground: hsl(215, 8%, 70%);
+  --accent: hsl(282, 44%, 47%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(348, 80%, 58%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(225, 20%, 20%);
+  --input: hsl(225, 20%, 20%);
+  --ring: hsl(282, 44%, 47%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply dark;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .cosmic-glow {
+    box-shadow: 0 0 20px rgba(142, 68, 173, 0.3);
+  }
+  
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stats-pulse {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+  
+  .starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='9' cy='9' r='1'/%3E%3Ccircle cx='49' cy='49' r='1'/%3E%3Ccircle cx='29' cy='29' r='1'/%3E%3Ccircle cx='39' cy='19' r='1'/%3E%3Ccircle cx='19' cy='39' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation: float 20s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 3s ease-in-out infinite;
+  }
+}
