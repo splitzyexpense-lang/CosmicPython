@@ -44,8 +44,18 @@ export default function Home() {
               className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
               data-testid="hero-description"
             >
-              The Easiest Way to Earn Crypto. No Hardware, No Battery Drain. Earn ASLX tokens on the Polygon network simply by watching rewarded ads. Fixed supply of{" "}
-              <span className="text-primary font-mono font-semibold">3,300,000</span>.
+              Astralux is a mobile application designed to simplify entry into the cryptocurrency world by allowing users to earn tokens with no financial investment. The platform operates on a "proof-of-engagement" model where users can "mine" an in-app currency called ASLX mini by tapping a button and viewing a rewarded advertisement once every hour.
+            </p>
+            <p 
+              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
+            >
+              Once a user accumulates 1,000 ASLX mini, they can convert them into 1 real Astralux (ASLX) token. ASLX is an ERC-20 token on the Polygon network with a fixed total supply of{" "}
+              <span className="text-primary font-mono font-semibold">3,300,000</span>. To ensure network efficiency, users can withdraw their real ASLX tokens to a personal wallet after their balance reaches a minimum of 10 ASLX.
+            </p>
+            <p 
+              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
+            >
+              The entire project is sustainably funded by the revenue from the in-app ads. To encourage consistent participation, Astralux offers bonuses, including a 100-token reward for a continuous 10-day mining streak and a 250-token reward for successful referrals. The user's global rank on the platform is determined by their total balance of ASLX mini.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
