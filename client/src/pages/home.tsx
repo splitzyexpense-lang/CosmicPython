@@ -301,9 +301,12 @@ export default function Home() {
                 </div>
                 
                 <div className="text-center">
-                  <div className="inline-block p-8 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full cosmic-glow">
-                    <span className="text-6xl">✦</span>
-                  </div>
+                  <img 
+                    src="/attached_assets/logo_1758666981199.png" 
+                    alt="Astralux Foundation Logo" 
+                    className="w-48 h-48 mx-auto cosmic-glow"
+                    data-testid="img-foundation-logo"
+                  />
                 </div>
               </div>
             </CardContent>
