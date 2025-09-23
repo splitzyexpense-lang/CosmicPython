@@ -47,14 +47,14 @@ export default function Header() {
           </div>
           
           {/* Search Bar (Desktop) */}
-          <div className="hidden md:block flex-1 max-w-lg mx-8">
+          <div className="hidden md:block flex-1 max-w-2xl mx-8">
             <form onSubmit={handleSearch} className="relative">
               <Input
                 type="search"
                 placeholder="Search documentation..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 bg-input border border-border"
+                className="w-full pl-10 pr-4 py-2 bg-input border border-border text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary"
                 data-testid="search-input"
               />
               <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -67,10 +67,10 @@ export default function Header() {
               <Link key={item.name} href={item.href}>
                 <Button
                   variant="ghost"
-                  className={`transition-colors font-medium ${
+                  className={`transition-colors font-medium hover:bg-primary/10 ${
                     location === item.href
                       ? "text-foreground"
-                      : "text-muted-foreground hover:text-primary"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                   data-testid={`nav-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
@@ -116,10 +116,10 @@ export default function Header() {
                     <Link key={item.name} href={item.href}>
                       <Button
                         variant="ghost"
-                        className={`w-full justify-start text-left ${
+                        className={`w-full justify-start text-left hover:bg-primary/10 ${
                           location === item.href
                             ? "text-foreground bg-secondary"
-                            : "text-muted-foreground hover:text-primary"
+                            : "text-muted-foreground hover:text-foreground"
                         }`}
                         onClick={() => setMobileMenuOpen(false)}
                         data-testid={`mobile-nav-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
