@@ -41,6 +41,13 @@ export default function Home() {
               Get Started with Astralux
             </h1>
             
+            <p 
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
+              data-testid="hero-description"
+            >
+              Astralux is a mobile app where you watch rewarded ads to earn in-app "ASLX mini" tokens. These can then be converted into real ASLX cryptocurrency on the Polygon network and withdrawn to a personal wallet.
+            </p>
+            
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <AppDownload 
                 onDownload={handleDownloadClick}
