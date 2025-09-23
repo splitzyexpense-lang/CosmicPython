@@ -5,6 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Search, Menu } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
+import astraluxLogo from "@assets/Gemini_Generated_Image_gyglfjgyglfjgygl_1758656370567.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -35,9 +36,12 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" data-testid="logo-link">
               <div className="flex-shrink-0">
-                <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  ✦ Astralux
-                </span>
+                <img 
+                  src={astraluxLogo} 
+                  alt="Astralux Logo" 
+                  className="h-10 w-10 object-contain hover:scale-105 transition-transform duration-200"
+                  data-testid="astralux-logo"
+                />
               </div>
             </Link>
           </div>
