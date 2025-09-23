@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-[auto,1fr,auto] items-center h-16 gap-8">
+        <div className="grid grid-cols-[auto,1fr,auto] items-center h-16 gap-2 md:gap-4">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" data-testid="logo-link">
@@ -41,7 +41,7 @@ export default function Header() {
           </div>
           
           {/* Navigation (Desktop) - Centered */}
-          <nav className="hidden md:flex items-center justify-center space-x-6 justify-self-center" data-testid="desktop-nav">
+          <nav className="hidden lg:flex items-center justify-center space-x-4 justify-self-center" data-testid="desktop-nav">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <Button
@@ -62,33 +62,31 @@ export default function Header() {
           {/* Right Side Cluster - Contains both desktop cluster and mobile menu */}
           <div className="flex items-center justify-end">
             {/* Desktop Right Side Cluster */}
-            <div className="hidden md:flex items-center space-x-3">
-              {/* Live Stats Pill */}
+            <div className="hidden md:flex items-center space-x-2">
+              {/* Live Stats Pill - Only show on large screens */}
               {liveStats && (
-                <div className="flex items-center space-x-2 bg-secondary/30 text-muted-foreground px-3 py-1.5 rounded-full text-sm border border-border/50" data-testid="live-stats-pill">
+                <div className="hidden xl:flex items-center space-x-1.5 bg-secondary/30 text-muted-foreground px-2.5 py-1 rounded-full text-xs border border-border/50" data-testid="live-stats-pill">
                   <Activity className="h-3 w-3 text-primary" />
-                  <span className="font-mono">{(liveStats.totalMiners / 1000).toFixed(1)}k miners</span>
-                  <span className="text-border">•</span>
-                  <span className="font-mono">{(liveStats.totalMined / 1000).toFixed(0)}k mined</span>
+                  <span className="font-mono">{(liveStats.totalMiners / 1000).toFixed(1)}k</span>
                 </div>
               )}
               
-              {/* Whitepaper Button */}
-              <Link href="/whitepaper">
+              {/* Whitepaper Button - Hide on smaller screens */}
+              <Link href="/whitepaper" className="hidden lg:block">
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="border-primary/20 text-muted-foreground hover:text-foreground hover:bg-primary/5 transition-all"
+                  className="border-primary/20 text-muted-foreground hover:text-foreground hover:bg-primary/5 transition-all px-3"
                   data-testid="button-whitepaper-header"
                 >
-                  <FileText className="h-4 w-4 mr-1.5" />
-                  Whitepaper
+                  <FileText className="h-3 w-3 mr-1" />
+                  <span className="hidden lg:inline">Whitepaper</span>
                 </Button>
               </Link>
               
-              {/* Primary CTA */}
+              {/* Primary CTA - Always visible on desktop */}
               <AppDownload 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium transition-all hover:scale-105 cosmic-glow"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-2 rounded-md text-sm font-medium transition-all hover:scale-105 cosmic-glow"
                 data-testid="download-app-header"
               />
             </div>
@@ -96,8 +94,8 @@ export default function Header() {
             {/* Mobile menu button */}
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="md:hidden" data-testid="mobile-menu-trigger">
-                  <Menu className="h-6 w-6" />
+                <Button variant="ghost" size="sm" className="lg:hidden" data-testid="mobile-menu-trigger">
+                  <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
             <SheetContent side="right" className="w-80" data-testid="mobile-menu">
