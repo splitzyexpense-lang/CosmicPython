@@ -5,12 +5,28 @@ import { getAllPosts } from "@/lib/posts";
 
 const newsUpdates = [
   {
+    title: "Get Ready for Launch! The Astralux App Arrives October 3rd! 🚀",
+    slug: "app-launch-october-3rd",
+    excerpt: "Mark your calendars! We are thrilled to announce the official launch date for the Astralux mobile app. On Friday, October 3rd, 2025, the app will be available for download on both iOS and Android devices.",
+    date: "September 24, 2025",
+    category: "Product Update",
+    featured: true
+  },
+  {
+    title: "It's Official: ASLX Token is Live on the Polygon Network! ✅",
+    slug: "aslx-token-live-polygon",
+    excerpt: "We have reached a foundational milestone for the Astralux project. On September 15th, 2025, the official Astralux (ASLX) ERC-20 smart contract was successfully deployed to the Polygon network.",
+    date: "September 15, 2025",
+    category: "Technology",
+    featured: true
+  },
+  {
     title: "Astralux Mobile App Beta Testing Begins",
     slug: "app-launch-beta",
     excerpt: "We're excited to announce the start of beta testing for the Astralux mobile app. Selected users can now experience our revolutionary ad-to-earn platform.",
     date: "December 15, 2024",
     category: "Product Update",
-    featured: true
+    featured: false
   },
   {
     title: "Smart Contract Audit Completed Successfully",
@@ -18,7 +34,7 @@ const newsUpdates = [
     excerpt: "Our smart contracts have passed comprehensive security audits with no critical issues found. Full audit report now available for public review.",
     date: "December 8, 2024",
     category: "Security",
-    featured: true
+    featured: false
   },
   {
     title: "Partnership Announcement: Major Ad Networks Integration",
@@ -81,7 +97,7 @@ export default function NewsIndex() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Latest News & Updates
+            Latest News & Announcements
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Stay informed about Astralux developments, partnerships, and ecosystem updates.
