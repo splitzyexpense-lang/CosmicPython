@@ -1,0 +1,67 @@
+Astralux (ASLX) Project Roadmap
+
+This roadmap outlines the key development phases for the Astralux application, from its initial launch to full on-chain integration and ecosystem growth.
+
+Phase 0: Foundation & Deployment (✅ Completed)
+
+This foundational phase established the technical and strategic groundwork for the project. All objectives in this phase have been successfully met.
+
+    Smart Contract Deployed: The official ASLX ERC-20 token contract is live on the Polygon network.
+
+    Tokenomics Established: The total supply of 3,300,000 ASLX has been minted and distributed to designated project wallets (Airdrop, Treasury, Liquidity, Team).
+
+    Core App Architecture: The Flutter application has been set up with a scalable, multi-platform architecture, stable dependencies, and a robust state management system using Riverpod.
+
+    Backend Infrastructure: Secure Firebase Cloud Functions and Firestore rules have been implemented to support core app logic.
+
+Phase 1: Mainnet Launch - The Core Mining Experience
+
+This phase focuses on launching the app with all essential features for users to begin mining, track progress, and engage with the core loop.
+
+    Seamless Onboarding: Users can sign up instantly and securely using their Google account. New users receive a 100 ASLX Mini welcome bonus to kickstart their journey.
+
+    Intuitive Mining Interface: A clean and responsive home screen where users can see their balance, track their mining streak, and initiate a mining session.
+
+    Secure Mining & Ad Integration: The core mining mechanism is live. Users can tap to mine once per hour by watching a rewarded ad, earning 1 ASLX Mini per session. The system is secured with server-side validation to prevent abuse.
+
+    10-Day Streak Bonus: A loyalty system that rewards users with a 100 ASLX Mini bonus for maintaining a 10-day consecutive mining streak.
+
+Phase 2: Growth & In-App Economy
+
+With the core experience established, this phase introduces features designed to drive user growth and build a robust in-app economy leading up to on-chain withdrawals.
+
+    High-Value Referral Program: Users can invite friends and earn a 250 ASLX Mini bonus when their referral mines their first 200 Mini-tokens. The referrals screen will track the progress of invited friends.
+
+    Two-Step Wallet System: The in-app wallet will be activated, showing both the ASLX Mini balance and the convertible ASLX balance. This includes:
+
+        Mini-to-ASLX Conversion: Users can convert 1,000 ASLX Mini into 1 ASLX.
+
+        Withdrawal Requests: Users can request to withdraw their ASLX to an external wallet once they meet the 10 ASLX minimum and verify their phone number.
+
+    Deep Linking & Universal Links: To make referrals seamless, invite links will directly open the app (or the App Store if not installed), ensuring the referral code is captured automatically.
+
+    Reliable Push Notifications: A robust notification system to remind users when their mining session is ready and to notify them of referral activity.
+
+Phase 3: Full On-Chain Integration
+
+This phase bridges the gap between the in-app economy and the Polygon blockchain, giving users full custody and utility of their ASLX tokens.
+
+    In-App EVM Wallet: Users will be able to create a new secure Polygon wallet or import an existing one directly within the Astralux app, protected by biometrics and secure storage.
+
+    Live On-Chain Balance: The wallet screen will display the user's real-time ASLX token balance directly from the Polygon network.
+
+    PolygonScan Integration: Users can easily view their wallet address and transaction history on the Polygon block explorer with a single tap.
+
+    Automated Airdrops: The backend processWithdrawalBatch function will run on a regular schedule, processing all pending withdrawal requests and sending ASLX tokens to users' linked wallets in batches.
+
+Phase 4: Ecosystem Expansion & Listing
+
+This future-looking phase focuses on bringing the ASLX token to the broader market and expanding its utility.
+
+    DEX Listing Target: Initiate the process for listing ASLX on a decentralized exchange (DEX) once the community has collectively mined 1,800,000 ASLX through airdrop rewards.
+
+    Liquidity Provision: Deploy the 165,000 ASLX (5%) from the Liquidity Provision Wallet to create a stable trading pool on the chosen DEX.
+
+    Community Governance (Future): Explore implementing a governance model where ASLX token holders can vote on key project decisions.
+
+    Partnerships: Seek partnerships within the Web3 ecosystem to add further utility to the ASLX token.

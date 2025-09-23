@@ -3,63 +3,64 @@ import Timeline from "@/components/timeline";
 
 const roadmapItems = [
   {
-    quarter: "Q4 2025",
-    title: "App Launch & Airdrop System Live",
-    description: "Official mobile app launch with full airdrop system integration",
+    quarter: "Phase 0",
+    title: "Foundation & Deployment ✅",
+    description: "This foundational phase established the technical and strategic groundwork for the project. All objectives in this phase have been successfully met.",
+    status: "completed" as const,
+    features: [
+      "Smart Contract Deployed: The official ASLX ERC-20 token contract is live on the Polygon network",
+      "Tokenomics Established: Total supply of 3,300,000 ASLX distributed to project wallets (Airdrop, Treasury, Liquidity, Team)",
+      "Core App Architecture: Flutter application with scalable, multi-platform architecture and Riverpod state management",
+      "Backend Infrastructure: Secure Firebase Cloud Functions and Firestore rules for core app logic"
+    ]
+  },
+  {
+    quarter: "Phase 1",
+    title: "Mainnet Launch - The Core Mining Experience",
+    description: "This phase focuses on launching the app with all essential features for users to begin mining, track progress, and engage with the core loop.",
     status: "current" as const,
     features: [
-      "iOS and Android app release",
-      "Rewarded ad system implementation",
-      "User registration and KYC",
-      "Initial airdrop distribution"
+      "Seamless Onboarding: Users sign up with Google account and receive 100 ASLX Mini welcome bonus",
+      "Intuitive Mining Interface: Clean home screen showing balance, mining streak, and mining session initiation",
+      "Secure Mining & Ad Integration: Core mining mechanism with hourly taps, rewarded ads, earning 1 ASLX Mini per session",
+      "10-Day Streak Bonus: Loyalty system rewarding 100 ASLX Mini bonus for 10-day consecutive mining streaks"
     ]
   },
   {
-    quarter: "Q1 2026",
-    title: "Staking Program Launch",
-    description: "Introduce token staking for additional rewards and governance participation",
+    quarter: "Phase 2",
+    title: "Growth & In-App Economy",
+    description: "With the core experience established, this phase introduces features designed to drive user growth and build a robust in-app economy leading up to on-chain withdrawals.",
     status: "upcoming" as const,
     features: [
-      "Staking smart contract deployment",
-      "Governance token mechanics",
-      "Staking rewards distribution",
-      "Community voting system"
+      "High-Value Referral Program: 250 ASLX Mini bonus when referrals mine their first 200 Mini-tokens",
+      "Two-Step Wallet System: In-app wallet showing Mini balance and convertible ASLX balance (1,000 Mini = 1 ASLX)",
+      "Withdrawal Requests: Users can withdraw ASLX to external wallet (10 ASLX minimum, phone verification required)",
+      "Deep Linking & Universal Links: Seamless referral experience with automatic app opening and referral capture",
+      "Reliable Push Notifications: Mining session reminders and referral activity notifications"
     ]
   },
   {
-    quarter: "Q2 2026",
-    title: "DEX Listing & Liquidity Pools",
-    description: "Major decentralized exchange listings and liquidity provision",
+    quarter: "Phase 3",
+    title: "Full On-Chain Integration",
+    description: "This phase bridges the gap between the in-app economy and the Polygon blockchain, giving users full custody and utility of their ASLX tokens.",
     status: "upcoming" as const,
     features: [
-      "Uniswap and SushiSwap listings",
-      "Liquidity pool creation",
-      "Trading pair establishment",
-      "Market maker partnerships"
+      "In-App EVM Wallet: Create new or import existing Polygon wallet with biometric protection and secure storage",
+      "Live On-Chain Balance: Real-time ASLX token balance displayed directly from Polygon network",
+      "PolygonScan Integration: One-tap access to wallet address and transaction history on block explorer",
+      "Automated Airdrops: Scheduled batch processing of withdrawal requests with automatic token distribution"
     ]
   },
   {
-    quarter: "Q3 2026",
-    title: "Governance DAO Implementation",
-    description: "Full decentralized autonomous organization for community governance",
+    quarter: "Phase 4",
+    title: "Ecosystem Expansion & Listing",
+    description: "This future-looking phase focuses on bringing the ASLX token to the broader market and expanding its utility.",
     status: "upcoming" as const,
     features: [
-      "DAO structure deployment",
-      "Proposal submission system",
-      "Community treasury management",
-      "Decentralized decision making"
-    ]
-  },
-  {
-    quarter: "Q4 2026",
-    title: "Ecosystem Expansion & Strategic Partnerships",
-    description: "Expand the ecosystem with new features and strategic collaborations",
-    status: "upcoming" as const,
-    features: [
-      "Partner integrations",
-      "Cross-chain compatibility",
-      "Advanced analytics dashboard",
-      "Enterprise partnerships"
+      "DEX Listing Target: Initiate listing process once community mines 1,800,000 ASLX through airdrop rewards",
+      "Liquidity Provision: Deploy 165,000 ASLX (5%) from Liquidity Wallet to create stable trading pools",
+      "Community Governance (Future): Explore governance model for ASLX token holder voting on key decisions",
+      "Partnerships: Seek Web3 ecosystem partnerships to expand ASLX token utility"
     ]
   }
 ];
@@ -97,7 +98,7 @@ export default function Roadmap() {
             Roadmap & Vision
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Astralux aims for mass adoption through an accessible, mobile-first entry point. The token's value is intrinsically linked to user base growth, ecosystem utility, and the scarcity created by its fixed supply.
+            This roadmap outlines the key development phases for the Astralux application, from its initial launch to full on-chain integration and ecosystem growth.
           </p>
         </div>
 
