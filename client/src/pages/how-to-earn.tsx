@@ -3,60 +3,60 @@ import EarnCalculator from "@/components/earn-calculator";
 
 const earnMethods = [
   {
-    icon: "📺",
-    title: "Watch Rewarded Ads",
-    description: "Earn mini-tokens by watching short video advertisements",
+    icon: "⛏️",
+    title: "Daily Mining",
+    description: "This is the core way to earn. Simply tap the Mine button every hour",
     details: [
-      "Watch 15-30 second video ads",
-      "Earn 10-50 mini-tokens per ad",
-      "Daily limit of 20 ads per user",
-      "Higher rewards for longer engagement"
+      "Tap the 'Mine' button in the app every hour",
+      "Watch a short ad after tapping mine",
+      "Earn 1 ASLX mini token per mining session",
+      "Timer shows when you can mine again"
     ],
-    potential: "Up to 1,000 mini-tokens daily"
+    potential: "24 mini-tokens daily"
+  },
+  {
+    icon: "🎁",
+    title: "Welcome Bonus",
+    description: "Get a head start on your earnings with a one-time signup bonus",
+    details: [
+      "Available to every new user",
+      "Received immediately after account creation",
+      "One-time bonus of 100 ASLX mini tokens",
+      "No additional requirements needed"
+    ],
+    potential: "100 mini-tokens (one-time)"
+  },
+  {
+    icon: "🔥",
+    title: "Daily Streak Bonus",
+    description: "Consistency is key. Reward for mining every day consecutively",
+    details: [
+      "Mine every day to maintain your streak",
+      "Bonus awarded for every 10 consecutive days",
+      "Receive 100 ASLX mini tokens per milestone",
+      "Rewards your dedication to daily mining"
+    ],
+    potential: "100 mini-tokens every 10 days"
   },
   {
     icon: "👥",
     title: "Referral Program",
-    description: "Invite friends and earn bonus rewards for their activity",
+    description: "Invite friends to join the Astralux network and earn generous bonuses",
     details: [
-      "Earn 10% of referred user's earnings",
-      "Bonus 500 mini-tokens per successful referral",
-      "No limit on number of referrals",
-      "Lifetime earnings from referrals"
+      "Share your unique referral link with friends",
+      "Friend must mine their first 200 ASLX mini tokens",
+      "You receive 250 ASLX mini tokens bonus",
+      "No limit on number of successful referrals"
     ],
-    potential: "Unlimited earning potential"
-  },
-  {
-    icon: "🔥",
-    title: "Daily Streak Bonuses",
-    description: "Maintain daily activity to unlock progressive bonuses",
-    details: [
-      "Day 1-7: 1x multiplier",
-      "Day 8-30: 1.5x multiplier",
-      "Day 31+: 2x multiplier",
-      "Weekly bonus chest rewards"
-    ],
-    potential: "Up to 2x earnings multiplier"
-  },
-  {
-    icon: "🏆",
-    title: "Future Staking (Q1 2026)",
-    description: "Stake your ASLX tokens to earn additional rewards",
-    details: [
-      "Annual percentage yield (APY) rewards",
-      "Governance token benefits",
-      "Early access to new features",
-      "Reduced transaction fees"
-    ],
-    potential: "5-15% APY (estimated)"
+    potential: "250 mini-tokens per referral"
   }
 ];
 
 const conversionSteps = [
   {
     step: 1,
-    title: "Earn Mini-Tokens",
-    description: "Watch ads and complete activities to accumulate mini-tokens in your app wallet."
+    title: "Accumulate Mini-Tokens",
+    description: "Mine hourly, maintain streaks, and refer friends to build your mini-token balance."
   },
   {
     step: 2,
@@ -85,7 +85,7 @@ export default function HowToEarn() {
             How to Earn ASLX
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Multiple pathways to earn ASLX tokens through our mobile-first ecosystem. Start earning today with just your smartphone.
+            In the Astralux app, you accumulate ASLX mini tokens through various in-app activities. These mini tokens are your key to earning real ASLX crypto, which can be withdrawn to your personal wallet.
           </p>
         </div>
 
