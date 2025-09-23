@@ -5,7 +5,7 @@ import { Menu, Activity, FileText } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
 import { useLiveStats } from "@/hooks/use-live-stats";
-import astraluxLogo from "@assets/Gemini_Generated_Image_gyglfjgyglfjgygl_1758656370567.png";
+import astraluxLogo from "@assets/logo_1758657603350.png";
 
 const navigation = [
   { name: "Home", href: "/" },
