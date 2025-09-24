@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
+import { useScrollRestoration } from "./hooks/use-scroll-restoration";
 
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
@@ -27,6 +28,9 @@ import Footer from "@/components/layout/footer";
 function Router() {
   // Track page views when routes change
   useAnalytics();
+  
+  // Restore scroll position to top when navigating between pages
+  useScrollRestoration();
   
   return (
     <div className="min-h-screen bg-background text-foreground">
