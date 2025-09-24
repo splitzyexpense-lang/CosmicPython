@@ -91,12 +91,12 @@ export default function Whitepaper() {
 
                 <div>
                   <h3 className="text-xl font-semibold mb-3">The Mining Cycle</h3>
-                  <ol className="space-y-3 ml-4 list-decimal">
+                  <ul className="space-y-3 ml-4">
                     <li className="leading-relaxed"><strong>Tap to Mine:</strong> A user starts a mining session in the app.</li>
                     <li className="leading-relaxed"><strong>View Ad:</strong> The user watches a short rewarded ad.</li>
                     <li className="leading-relaxed"><strong>Earn Reward:</strong> Upon completion, the user is credited with 1 ASLX Mini.</li>
                     <li className="leading-relaxed"><strong>Cooldown:</strong> A 1-hour cooldown period begins before the next session can be started.</li>
-                  </ol>
+                  </ul>
                 </div>
 
                 <div>
@@ -109,10 +109,10 @@ export default function Whitepaper() {
 
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Withdrawal Process</h3>
-                  <ol className="space-y-3 ml-4 list-decimal">
+                  <ul className="space-y-3 ml-4">
                     <li className="leading-relaxed"><strong>Conversion:</strong> Users convert their ASLX Mini into ASLX tokens inside the app's wallet.</li>
                     <li className="leading-relaxed"><strong>Withdrawal:</strong> Once a user has a minimum of 10 ASLX, they can request a withdrawal to an external Polygon wallet. All withdrawals require mandatory phone number verification to prevent abuse.</li>
-                  </ol>
+                  </ul>
                 </div>
               </div>
             </CardContent>

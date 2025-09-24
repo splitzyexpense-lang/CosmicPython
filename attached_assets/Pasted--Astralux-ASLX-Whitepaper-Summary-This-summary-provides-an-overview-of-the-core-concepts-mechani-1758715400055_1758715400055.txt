@@ -1,0 +1,154 @@
+
+Astralux (ASLX) Whitepaper Summary
+
+This summary provides an overview of the core concepts, mechanics, and goals of the Astralux project as detailed in the official whitepaper (Version 1.0, September 2025)1111.
+
+
+Abstract
+
+Astralux is a
+mobile-first platform created to simplify and lower the barrier to entry for cryptocurrency adoption. Through a gamified mobile app, users can earn real ASLX cryptocurrency tokens by participating in a simulated mining experience. The platform operates on a rewarded advertising model, which completely
+
+eliminates the financial risk and technical complexity typically associated with digital assets.
+
+ASLX is a fixed-supply
+ERC-20 token on the Polygon network, with a total of 3,300,000 tokens. A significant majority of the supply,
+
+75%, is reserved for community distribution through the app's mining and rewards system to ensure a fair launch.
+
+
+The Problem & Solution
+
+Astralux was designed to solve common challenges that prevent widespread crypto adoption:
+
+Financial Risk: The need to purchase crypto exposes users to market volatility.
+
+
+Technical Complexity: Managing wallets and private keys can be intimidating for newcomers.
+
+
+Information Overload: The crypto space is often filled with confusing jargon.
+
+
+Trust & Security: New users are frequently targeted by scams.
+
+
+The Astralux ecosystem directly addresses these issues by providing a
+risk-free, user-friendly on-ramp to Web3. By participating in the app, users learn core crypto concepts in a simplified environment, and tokens are distributed based on active engagement rather than early investment.
+
+
+Core Mechanics
+
+The user experience is built around a simple and sustainable model.
+
+
+Dual Token System
+
+The platform uses two tokens to separate in-app rewards from on-chain assets:
+
+ASLX Mini: This is the centralized, off-chain reward currency earned within the app through mining.
+
+
+ASLX: This is the official ERC-20 cryptocurrency on the Polygon blockchain that holds real-world value.
+
+
+Conversion Rate: 1,000 ASLX Mini = 1 ASLX Token.
+
+
+
+The Mining Cycle
+
+Tap to Mine: A user starts a mining session in the app.
+
+
+View Ad: The user watches a short rewarded ad.
+
+
+Earn Reward: Upon completion, the user is credited with 1 ASLX Mini.
+
+
+Cooldown: A 1-hour cooldown period begins before the next session can be started.
+
+
+
+Bonuses and Referrals
+
+Streak Bonus: Users who mine for 10 consecutive days receive a bonus of 100 ASLX Mini.
+
+
+Referral Bonus: A user earns 250 ASLX Mini for each successful referral24. The bonus is granted after the referred user mines their first 200 ASLX Mini.
+
+
+
+Withdrawal Process
+
+Conversion: Users convert their ASLX Mini into ASLX tokens inside the app's wallet.
+
+
+Withdrawal: Once a user has a minimum of 10 ASLX, they can request a withdrawal to an external Polygon wallet. All withdrawals require
+
+mandatory phone number verification to prevent abuse.
+
+
+
+Tokenomics
+
+Token Name: Astralux 
+
+
+Symbol: ASLX 
+
+
+Network: Polygon 
+
+
+Contract Type: ERC-20 
+
+
+Total Supply: 3,300,000 ASLX (fixed) 
+
+
+
+Token Allocation
+
+Airdrop Rewards (75% - 2,475,000 ASLX): Reserved entirely for community distribution through the mobile app's mining and reward features.
+
+
+Ecosystem & Treasury (15% - 495,000 ASLX): Funds for future development, marketing, and partnerships.
+
+
+Liquidity Provision (5% - 165,000 ASLX): Reserved for providing initial liquidity on a decentralized exchange (DEX).
+
+
+Team (5% - 165,000 ASLX): Allocated to the founding team, subject to a vesting schedule to ensure long-term commitment.
+
+
+
+Technical Architecture
+
+Mobile App: Built with Flutter for a consistent experience on iOS and Android, using Riverpod for state management.
+
+
+Backend: Powered by Firebase, including Firestore for the database and Cloud Functions for secure, server-side validation.
+
+
+Blockchain: The ASLX token is deployed on the Polygon network for its low fees and high throughput. The smart contract includes a batchTransfer function for efficient airdrop processing.
+
+
+Roadmap
+
+Phase 0 (Completed): Smart contract deployment, token distribution to allocation wallets, and core infrastructure setup.
+
+
+Phase 1 (In Progress): Public app launch on iOS and Android, implementation of Google Sign-In, and activation of the streak bonus system.
+
+
+Phase 2 (Growth & Economy): Launch of the referral program, activation of in-app conversion and withdrawal requests.
+
+
+Phase 3 (Full On-Chain Integration): Integration of a secure in-app EVM wallet and display of live on-chain balances.
+
+
+Phase 4 (Ecosystem Expansion): Pursue listing on a DEX, provide liquidity, and explore community governance.
+
+
