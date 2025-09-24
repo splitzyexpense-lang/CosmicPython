@@ -270,24 +270,67 @@ export default function Home() {
       {/* Trust Section */}
       <TrustBadges />
 
-      {/* Astralux Foundation */}
+      {/* About Astralux */}
       <section className="py-16 bg-gradient-to-b from-background to-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border border-border">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold mb-4">
-                  <span className="text-primary">{'>>> '}</span>Astralux Foundation
+                  <span className="text-primary">{'>>> '}</span>About Astralux
                 </h2>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                    The mission of the Astralux Foundation is to promote, protect, and advance the Astralux ecosystem, and to support and facilitate the growth of a diverse and international community of crypto earners through accessible, mobile-first solutions.
-                  </p>
+              <div className="grid md:grid-cols-3 gap-8 items-start">
+                <div className="md:col-span-2 space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-primary">Our Mission: Democratizing Cryptocurrency for Everyone</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      At Astralux, our mission is to dismantle the barriers to entry in the world of cryptocurrency. We believe that access to the future of digital finance should be open to all, not just a select few. We've designed the Astralux app from the ground up to be the simplest, most secure, and most rewarding gateway for anyone to begin their crypto journey, regardless of their technical expertise or financial standing.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-primary">What is Astralux?</h3>
+                    <div className="space-y-3 text-muted-foreground leading-relaxed">
+                      <p>
+                        Astralux is a free-to-use mobile application that allows you to earn real cryptocurrency, the Astralux token (ASLX), through a simple and engaging process we call mobile mining.
+                      </p>
+                      <p>
+                        By tapping a button in the app once an hour, you earn our in-app currency, ASLX mini. These ASLX mini tokens are your reward for contributing to the network. Once you've collected enough, you can convert them into real ASLX tokens, which are yours to hold, trade, or use on the Polygon blockchain.
+                      </p>
+                      <p>
+                        The entire ecosystem is powered by ad revenue, meaning you never have to invest your own money to get started. Your time and engagement are what fuel the platform.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-primary">The Astralux Philosophy: Our Core Principles</h3>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed">
+                      <p>
+                        We are guided by a set of core principles that ensure our platform is fair, secure, and built for the long term.
+                      </p>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Community-First Tokenomics:</h4>
+                        <p>Our project is fundamentally centered around our users. An unprecedented 75% of the total token supply (2,475,000 ASLX) is allocated directly to the Airdrop Rewards wallet. This isn't just a platform; it's a community-owned economy where the vast majority of value is distributed to the users who build it.</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Fair and Free Access:</h4>
+                        <p>True accessibility means no financial barriers. The Astralux project's operational costs and revenue are covered exclusively by advertisements shown during the mining process. This ensures a level playing field where anyone with a smartphone can participate and earn without any upfront investment.</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Unyielding Security:</h4>
+                        <p>Your assets and trust are paramount. Astralux is built with institutional-grade security measures at every level, including on-device protection with encrypted storage and biometric authentication, server-side validation for all critical actions, and robust architecture built on proven technology.</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Built on Proven Technology:</h4>
+                        <p>Astralux (ASLX) is an ERC-20 token built on the Polygon network. We chose Polygon for its low transaction fees, high speed, and robust security, ensuring that when you withdraw your tokens, the process is both efficient and affordable.</p>
+                      </div>
+                    </div>
+                  </div>
                   
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button 
                       className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
                       data-testid="button-foundation-learn-more"
@@ -306,7 +349,7 @@ export default function Home() {
                 <div className="text-center">
                   <img 
                     src="/attached_assets/logo_1758666981199.png" 
-                    alt="Astralux Foundation Logo" 
+                    alt="Astralux Logo" 
                     className="w-48 h-48 mx-auto cosmic-glow"
                     data-testid="img-foundation-logo"
                   />

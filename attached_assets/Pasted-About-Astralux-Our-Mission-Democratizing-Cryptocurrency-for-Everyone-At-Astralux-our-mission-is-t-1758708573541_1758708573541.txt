@@ -1,0 +1,21 @@
+About Astralux
+
+Our Mission: Democratizing Cryptocurrency for Everyone
+At Astralux, our mission is to dismantle the barriers to entry in the world of cryptocurrency. We believe that access to the future of digital finance should be open to all, not just a select few. We've designed the Astralux app from the ground up to be the simplest, most secure, and most rewarding gateway for anyone to begin their crypto journey, regardless of their technical expertise or financial standing.
+
+What is Astralux?
+
+Astralux is a free-to-use mobile application that allows you to earn real cryptocurrency, the Astralux token (ASLX), through a simple and engaging process we call mobile mining.
+By tapping a button in the app once an hour, you earn our in-app currency, ASLX mini. These ASLX mini tokens are your reward for contributing to the network. Once you've collected enough, you can convert them into real ASLX tokens, which are yours to hold, trade, or use on the Polygon blockchain.
+The entire ecosystem is powered by ad revenue, meaning you never have to invest your own money to get started. Your time and engagement are what fuel the platform.
+
+The Astralux Philosophy: Our Core Principles
+
+We are guided by a set of core principles that ensure our platform is fair, secure, and built for the long term.
+Community-First Tokenomics: Our project is fundamentally centered around our users. An unprecedented 75% of the total token supply (2,475,000 ASLX) is allocated directly to the Airdrop Rewards wallet. This isn't just a platform; it's a community-owned economy where the vast majority of value is distributed to the users who build it.
+Fair and Free Access: True accessibility means no financial barriers. The Astralux project's operational costs and revenue are covered exclusively by advertisements shown during the mining process. This ensures a level playing field where anyone with a smartphone can participate and earn without any upfront investment.
+Unyielding Security: Your assets and trust are paramount. Astralux is built with institutional-grade security measures at every level.
+On-Device Protection: We implement secure, encrypted storage for your wallet credentials, protected by biometric authentication (Face ID or fingerprint).
+Server-Side Validation: All critical actions, such as mining claims and conversions, are validated on the server to prevent cheating and ensure the integrity of the economy.
+Robust Architecture: The app is built on a modern, production-ready technology stack (Flutter, Firebase, Riverpod) to deliver a stable and reliable experience.
+Built on Proven Technology: Astralux (ASLX) is an ERC-20 token built on the Polygon network. We chose Polygon for its low transaction fees, high speed, and robust security, ensuring that when you withdraw your tokens, the process is both efficient and affordable.
