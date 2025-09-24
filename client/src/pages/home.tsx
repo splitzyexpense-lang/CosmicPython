@@ -192,38 +192,35 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {/* Real-time Stats & Community */}
-          <Card className="hover-lift stats-pulse" data-testid="card-community">
+          {/* Community Support */}
+          <Card className="hover-lift" data-testid="card-community-support">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center">
-                <span className="mr-3 text-primary">🌟</span>
-                Join Our Universe
+                <span className="mr-3 text-primary">🤝</span>
+                Community Support
               </h2>
               <p className="text-muted-foreground mb-6">
-                Real-time ecosystem statistics and vibrant community channels.
+                Connect with our community and get help from fellow users and support team.
               </p>
-              <div className="space-y-4">
-                <StatsWidget data-testid="stats-widget-home" />
-                <div className="flex gap-2 justify-center">
-                  <a
-                    href="https://x.com/AstraluxSupport"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#1DA1F2] hover:bg-[#1991DA] px-3 py-1 rounded text-sm transition-all text-white font-medium"
-                    data-testid="button-twitter"
-                  >
-                    Twitter/X
-                  </a>
-                  <a
-                    href="https://t.me/AstraluxOfficial"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#229ED9] hover:bg-[#1E8BC3] px-3 py-1 rounded text-sm transition-all text-white font-medium"
-                    data-testid="button-telegram"
-                  >
-                    Telegram
-                  </a>
-                </div>
+              <div className="flex gap-2 justify-center">
+                <a
+                  href="https://x.com/AstraluxSupport"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-[#1DA1F2] hover:bg-[#1991DA] px-3 py-1 rounded text-sm transition-all text-white font-medium"
+                  data-testid="button-twitter"
+                >
+                  Twitter/X
+                </a>
+                <a
+                  href="https://t.me/AstraluxOfficial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-[#229ED9] hover:bg-[#1E8BC3] px-3 py-1 rounded text-sm transition-all text-white font-medium"
+                  data-testid="button-telegram"
+                >
+                  Telegram
+                </a>
               </div>
             </CardContent>
           </Card>
