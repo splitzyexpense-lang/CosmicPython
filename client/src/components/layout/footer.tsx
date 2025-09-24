@@ -22,8 +22,8 @@ const footerSections = [
   {
     title: "Community",
     links: [
-      { name: "Discord", href: "https://discord.gg/astralux", external: true },
-      { name: "Twitter/X", href: "https://twitter.com/astralux_aslx", external: true },
+      { name: "Telegram", href: "https://t.me/AstraluxOfficial", external: true },
+      { name: "Twitter/X", href: "https://x.com/AstraluxSupport", external: true },
       { name: "News & Updates", href: "/news" },
       { name: "Support", href: "/support" },
     ],
