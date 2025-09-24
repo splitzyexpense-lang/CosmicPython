@@ -138,26 +138,6 @@ export default function NewsIndex() {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Follow our official channels to never miss important announcements and updates about the Astralux ecosystem.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://discord.gg/astralux"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg font-semibold transition-all"
-              data-testid="button-join-discord"
-            >
-              Join Discord
-            </a>
-            <a
-              href="https://twitter.com/astralux_aslx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#1DA1F2] hover:bg-[#1991DA] text-white rounded-lg font-semibold transition-all"
-              data-testid="button-follow-twitter"
-            >
-              Follow on X
-            </a>
-          </div>
         </div>
       </div>
     </div>
