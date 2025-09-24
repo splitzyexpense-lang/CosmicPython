@@ -14,13 +14,10 @@ export default function Whitepaper() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Astralux (ASLX) Whitepaper
+            Astralux (ASLX) Whitepaper Summary
           </h1>
-          <p className="text-xl text-muted-foreground mb-4">
-            Version 1.0
-          </p>
           <p className="text-lg text-muted-foreground mb-8">
-            September 24, 2025
+            This summary provides an overview of the core concepts, mechanics, and goals of the Astralux project as detailed in the official whitepaper (Version 1.0, September 2025).
           </p>
           <Button 
             onClick={handleDownloadPDF} 
@@ -40,117 +37,82 @@ export default function Whitepaper() {
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
               <p className="text-justify leading-relaxed">
-                Astralux is a mobile-first platform designed to lower the barrier to entry for cryptocurrency adoption. Through a gamified mobile application, users can earn real ASLX cryptocurrency tokens by engaging in a simulated mining experience, supported by a rewarded advertising model. This approach eliminates the financial risk and technical complexity typically associated with entering the digital asset space. ASLX is an ERC-20 token on the Polygon network, with a fixed supply of 3,300,000 tokens. A supermajority of the supply, 75%, is reserved for community distribution through the app's mining and reward mechanisms, ensuring a fair and widespread launch.
+                Astralux is a mobile-first platform created to simplify and lower the barrier to entry for cryptocurrency adoption. Through a gamified mobile app, users can earn real ASLX cryptocurrency tokens by participating in a simulated mining experience. The platform operates on a rewarded advertising model, which completely eliminates the financial risk and technical complexity typically associated with digital assets.
+              </p>
+              <p className="text-justify leading-relaxed">
+                ASLX is a fixed-supply ERC-20 token on the Polygon network, with a total of 3,300,000 tokens. A significant majority of the supply, 75%, is reserved for community distribution through the app's mining and rewards system to ensure a fair launch.
               </p>
             </CardContent>
           </Card>
 
-          {/* Introduction */}
+          {/* The Problem & Solution */}
           <Card>
             <CardHeader>
-              <CardTitle>1. Introduction</CardTitle>
+              <CardTitle>The Problem & Solution</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
               <p className="text-justify leading-relaxed">
-                The global interest in cryptocurrency continues to surge, yet for the average individual, the path to ownership remains fraught with obstacles. Complex exchanges, volatile market risks, and the need for technical knowledge create a significant barrier, preventing widespread adoption.
-              </p>
-              <p className="text-justify leading-relaxed">
-                Astralux was conceived to bridge this gap. We believe that earning your first cryptocurrency should be an intuitive, engaging, and risk-free experience. By leveraging the ubiquity of smartphones, Astralux provides a gateway for anyone to begin their crypto journey. Our mission is to distribute cryptocurrency into the hands of a global user base through a simple, fair, and sustainable model.
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* The Problem */}
-          <Card>
-            <CardHeader>
-              <CardTitle>2. The Problem: Barriers to Crypto Adoption</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
-              <p className="text-justify leading-relaxed">
-                Despite its potential, the cryptocurrency ecosystem presents several challenges for newcomers:
+                Astralux was designed to solve common challenges that prevent widespread crypto adoption:
               </p>
               <ul className="space-y-3 ml-4">
-                <li className="leading-relaxed"><strong>Financial Risk:</strong> The primary method of acquiring cryptocurrency is through direct purchase, exposing individuals to market volatility and potential financial loss.</li>
-                <li className="leading-relaxed"><strong>Technical Complexity:</strong> Setting up wallets, managing private keys, and navigating decentralized exchanges (DEXs) requires a steep learning curve that can be intimidating.</li>
-                <li className="leading-relaxed"><strong>Information Overload:</strong> The space is filled with jargon and conflicting information, making it difficult for beginners to make informed decisions.</li>
-                <li className="leading-relaxed"><strong>Trust & Security:</strong> New users are often vulnerable to scams and security breaches.</li>
+                <li className="leading-relaxed"><strong>Financial Risk:</strong> The need to purchase crypto exposes users to market volatility.</li>
+                <li className="leading-relaxed"><strong>Technical Complexity:</strong> Managing wallets and private keys can be intimidating for newcomers.</li>
+                <li className="leading-relaxed"><strong>Information Overload:</strong> The crypto space is often filled with confusing jargon.</li>
+                <li className="leading-relaxed"><strong>Trust & Security:</strong> New users are frequently targeted by scams.</li>
               </ul>
-            </CardContent>
-          </Card>
-
-          {/* The Solution */}
-          <Card>
-            <CardHeader>
-              <CardTitle>3. The Solution: The Astralux Ecosystem</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
               <p className="text-justify leading-relaxed">
-                Astralux addresses these challenges with a mobile application that serves as a user-friendly on-ramp to the world of Web3:
+                The Astralux ecosystem directly addresses these issues by providing a risk-free, user-friendly on-ramp to Web3. By participating in the app, users learn core crypto concepts in a simplified environment, and tokens are distributed based on active engagement rather than early investment.
               </p>
-              <ul className="space-y-3 ml-4">
-                <li className="leading-relaxed"><strong>Risk-Free Entry:</strong> Users do not need to invest any of their own money. The entire ecosystem is funded by a rewarded advertising model, where the value generated from ad views is converted into cryptocurrency for the user.</li>
-                <li className="leading-relaxed"><strong>Learn by Doing:</strong> The app introduces core crypto concepts—like wallets and on-chain balances—in a controlled and simplified environment, building user confidence and knowledge over time.</li>
-                <li className="leading-relaxed"><strong>Fair & Meritocratic Distribution:</strong> The primary method of token distribution is through active participation ("mining"). This ensures that tokens are earned by engaged community members, rather than being concentrated in the hands of early investors.</li>
-                <li className="leading-relaxed"><strong>Secure Foundation:</strong> By building on a robust technical stack and implementing server-side validation for all critical actions, we prioritize user security and the integrity of the ecosystem.</li>
-              </ul>
             </CardContent>
           </Card>
 
           {/* Core Mechanics */}
           <Card>
             <CardHeader>
-              <CardTitle>4. Core Mechanics: How Astralux Works</CardTitle>
+              <CardTitle>Core Mechanics</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-justify leading-relaxed">
-                The user journey is designed for simplicity and sustained engagement.
+                The user experience is built around a simple and sustainable model.
               </p>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">4.1 The Dual Token System</h3>
+                  <h3 className="text-xl font-semibold mb-3">Dual Token System</h3>
                   <p className="text-justify leading-relaxed mb-4">
-                    Astralux utilizes a two-token system to separate in-app activity from on-chain transactions, creating a seamless user experience:
+                    The platform uses two tokens to separate in-app rewards from on-chain assets:
                   </p>
                   <ul className="space-y-3 ml-4">
-                    <li className="leading-relaxed"><strong>ASLX Mini:</strong> This is the in-app reward currency. Users earn ASLX Mini by participating in the mining process. It is a centralized, off-chain point system that represents a user's contribution to the network.</li>
-                    <li className="leading-relaxed"><strong>ASLX:</strong> This is the official ERC-20 cryptocurrency on the Polygon blockchain. It holds real-world value and can be withdrawn to a personal wallet.</li>
+                    <li className="leading-relaxed"><strong>ASLX Mini:</strong> This is the centralized, off-chain reward currency earned within the app through mining.</li>
+                    <li className="leading-relaxed"><strong>ASLX:</strong> This is the official ERC-20 cryptocurrency on the Polygon blockchain that holds real-world value.</li>
+                    <li className="leading-relaxed"><strong>Conversion Rate:</strong> 1,000 ASLX Mini = 1 ASLX Token.</li>
                   </ul>
-                  <p className="text-justify leading-relaxed mt-4">
-                    Users can convert their in-app rewards at a fixed rate: <strong>1,000 ASLX Mini = 1 ASLX Token</strong>.
-                  </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">4.2 The Mining Cycle</h3>
+                  <h3 className="text-xl font-semibold mb-3">The Mining Cycle</h3>
                   <ol className="space-y-3 ml-4 list-decimal">
-                    <li className="leading-relaxed"><strong>Tap to Mine:</strong> Users initiate a mining session by tapping a button in the app.</li>
-                    <li className="leading-relaxed"><strong>View Rewarded Ad:</strong> To complete the session and earn a reward, the user watches a short ad.</li>
-                    <li className="leading-relaxed"><strong>Earn Reward:</strong> Upon successful ad completion, the user's account is credited with 1 ASLX Mini.</li>
-                    <li className="leading-relaxed"><strong>Cooldown Period:</strong> A 1-hour cooldown begins before the user can start another session. This server-validated cooldown ensures fair participation and system stability.</li>
+                    <li className="leading-relaxed"><strong>Tap to Mine:</strong> A user starts a mining session in the app.</li>
+                    <li className="leading-relaxed"><strong>View Ad:</strong> The user watches a short rewarded ad.</li>
+                    <li className="leading-relaxed"><strong>Earn Reward:</strong> Upon completion, the user is credited with 1 ASLX Mini.</li>
+                    <li className="leading-relaxed"><strong>Cooldown:</strong> A 1-hour cooldown period begins before the next session can be started.</li>
                   </ol>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">4.3 Bonuses and Referrals</h3>
-                  <p className="text-justify leading-relaxed mb-4">
-                    To encourage consistent engagement and community growth, Astralux offers two bonus systems:
-                  </p>
+                  <h3 className="text-xl font-semibold mb-3">Bonuses and Referrals</h3>
                   <ul className="space-y-3 ml-4">
-                    <li className="leading-relaxed"><strong>Streak Bonus:</strong> Users who mine consecutively for 10 days receive a bonus of 100 ASLX Mini.</li>
-                    <li className="leading-relaxed"><strong>Referral Bonus:</strong> A user earns 250 ASLX Mini for each friend they refer. This bonus is awarded when the referred user successfully mines their first 200 ASLX Mini, ensuring high-quality referrals.</li>
+                    <li className="leading-relaxed"><strong>Streak Bonus:</strong> Users who mine for 10 consecutive days receive a bonus of 100 ASLX Mini.</li>
+                    <li className="leading-relaxed"><strong>Referral Bonus:</strong> A user earns 250 ASLX Mini for each successful referral. The bonus is granted after the referred user mines their first 200 ASLX Mini.</li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">4.4 The Withdrawal Process</h3>
-                  <p className="text-justify leading-relaxed mb-4">
-                    The process is designed in two secure steps to bridge the off-chain and on-chain environments:
-                  </p>
-                  <div className="space-y-3">
-                    <p className="leading-relaxed"><strong>1. Conversion:</strong> Inside the app's wallet, a user converts their accumulated ASLX Mini into ASLX tokens.</p>
-                    <p className="leading-relaxed"><strong>2. Withdrawal Request:</strong> Once a user has accumulated a minimum of 10 ASLX, they can request a withdrawal to an external Polygon wallet address. This request is added to a secure processing queue. All withdrawal requests are subject to mandatory phone number verification to prevent abuse.</p>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Withdrawal Process</h3>
+                  <ol className="space-y-3 ml-4 list-decimal">
+                    <li className="leading-relaxed"><strong>Conversion:</strong> Users convert their ASLX Mini into ASLX tokens inside the app's wallet.</li>
+                    <li className="leading-relaxed"><strong>Withdrawal:</strong> Once a user has a minimum of 10 ASLX, they can request a withdrawal to an external Polygon wallet. All withdrawals require mandatory phone number verification to prevent abuse.</li>
+                  </ol>
                 </div>
               </div>
             </CardContent>
@@ -159,12 +121,9 @@ export default function Whitepaper() {
           {/* Tokenomics */}
           <Card>
             <CardHeader>
-              <CardTitle>5. Tokenomics</CardTitle>
+              <CardTitle>Tokenomics</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-6">
-              <p className="text-justify leading-relaxed">
-                The ASLX token is designed for utility and decentralized distribution:
-              </p>
               <ul className="space-y-2 ml-4">
                 <li className="leading-relaxed"><strong>Token Name:</strong> Astralux</li>
                 <li className="leading-relaxed"><strong>Symbol:</strong> ASLX</li>
@@ -174,49 +133,21 @@ export default function Whitepaper() {
               </ul>
 
               <div className="mt-6">
-                <h3 className="text-xl font-semibold mb-3">5.1 Token Allocation</h3>
-                <p className="text-justify leading-relaxed mb-4">
-                  The total supply is allocated to four distinct wallets to ensure transparency and long-term project health:
-                </p>
-              </div>
-              
-              <div className="overflow-x-auto my-6">
-                <table className="w-full border-collapse border border-border text-sm">
-                  <thead>
-                    <tr className="bg-secondary">
-                      <th className="border border-border p-4 text-left font-semibold w-[20%]">Allocation</th>
-                      <th className="border border-border p-4 text-left font-semibold w-[20%]">Amount</th>
-                      <th className="border border-border p-4 text-left font-semibold w-[12%]">Percentage</th>
-                      <th className="border border-border p-4 text-left font-semibold w-[48%]">Purpose</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-border p-4 align-top"><strong>Airdrop Rewards</strong></td>
-                      <td className="border border-border p-4 font-mono align-top">2,475,000 ASLX</td>
-                      <td className="border border-border p-4 align-top text-center">75%</td>
-                      <td className="border border-border p-4 align-top leading-relaxed">This entire allocation is reserved for the community and can only be distributed through the mobile app's mining and reward mechanisms. This ensures the majority of tokens are earned by the users.</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-border p-4 align-top"><strong>Ecosystem & Treasury</strong></td>
-                      <td className="border border-border p-4 font-mono align-top">495,000 ASLX</td>
-                      <td className="border border-border p-4 align-top text-center">15%</td>
-                      <td className="border border-border p-4 align-top leading-relaxed">Funds for future development, marketing, partnerships, and community initiatives to grow the Astralux ecosystem.</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-border p-4 align-top"><strong>Liquidity Provision</strong></td>
-                      <td className="border border-border p-4 font-mono align-top">165,000 ASLX</td>
-                      <td className="border border-border p-4 align-top text-center">5%</td>
-                      <td className="border border-border p-4 align-top leading-relaxed">Reserved to provide initial liquidity on a decentralized exchange (DEX) upon listing, facilitating a stable trading environment.</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-border p-4 align-top"><strong>Team</strong></td>
-                      <td className="border border-border p-4 font-mono align-top">165,000 ASLX</td>
-                      <td className="border border-border p-4 align-top text-center">5%</td>
-                      <td className="border border-border p-4 align-top leading-relaxed">Allocated to the founding team, subject to a vesting schedule to ensure long-term commitment to the project's success.</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h3 className="text-xl font-semibold mb-3">Token Allocation</h3>
+                <ul className="space-y-4 ml-4">
+                  <li className="leading-relaxed">
+                    <strong>Airdrop Rewards (75% - 2,475,000 ASLX):</strong> Reserved entirely for community distribution through the mobile app's mining and reward features.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong>Ecosystem & Treasury (15% - 495,000 ASLX):</strong> Funds for future development, marketing, and partnerships.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong>Liquidity Provision (5% - 165,000 ASLX):</strong> Reserved for providing initial liquidity on a decentralized exchange (DEX).
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong>Team (5% - 165,000 ASLX):</strong> Allocated to the founding team, subject to a vesting schedule to ensure long-term commitment.
+                  </li>
+                </ul>
               </div>
             </CardContent>
           </Card>
@@ -224,17 +155,13 @@ export default function Whitepaper() {
           {/* Technical Architecture */}
           <Card>
             <CardHeader>
-              <CardTitle>6. Technical Architecture</CardTitle>
+              <CardTitle>Technical Architecture</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
-              <p className="text-justify leading-relaxed mb-4">
-                The Astralux platform is built on a modern, scalable, and secure technology stack:
-              </p>
               <ul className="space-y-4 ml-4">
-                <li className="leading-relaxed"><strong>Mobile Application:</strong> Developed using Flutter, allowing for a consistent, high-performance experience on both iOS and Android from a single codebase. State management is handled by Riverpod for a reactive and predictable UI.</li>
-                <li className="leading-relaxed"><strong>Backend:</strong> Powered by Firebase, utilizing secure Firestore databases for user data and state, and Cloud Functions for server-side validation of critical logic like mining, rewards, and withdrawal requests.</li>
-                <li className="leading-relaxed"><strong>Blockchain:</strong> The ASLX token is deployed on the Polygon network, chosen for its low transaction fees, high throughput, and robust EVM compatibility.</li>
-                <li className="leading-relaxed"><strong>Smart Contract:</strong> The ASLX token contract is a standard ERC-20 with an added batchTransfer function to efficiently process community airdrops in a gas-optimized manner.</li>
+                <li className="leading-relaxed"><strong>Mobile App:</strong> Built with Flutter for a consistent experience on iOS and Android, using Riverpod for state management.</li>
+                <li className="leading-relaxed"><strong>Backend:</strong> Powered by Firebase, including Firestore for the database and Cloud Functions for secure, server-side validation.</li>
+                <li className="leading-relaxed"><strong>Blockchain:</strong> The ASLX token is deployed on the Polygon network for its low fees and high throughput. The smart contract includes a batchTransfer function for efficient airdrop processing.</li>
               </ul>
             </CardContent>
           </Card>
@@ -242,59 +169,26 @@ export default function Whitepaper() {
           {/* Roadmap */}
           <Card>
             <CardHeader>
-              <CardTitle>7. Roadmap</CardTitle>
+              <CardTitle>Roadmap</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>
-                Our development is structured into distinct phases, moving from launch to full decentralization:
-              </p>
-              
-              <h3>✅ Phase 0: Foundation (Completed)</h3>
-              <ul>
-                <li>ASLX Smart Contract deployed on the Polygon network.</li>
-                <li>Token supply distributed to allocation wallets.</li>
-                <li>Core mobile application architecture and backend infrastructure established.</li>
-              </ul>
-
-              <h3>⏳ Phase 1: Mainnet Launch (In Progress)</h3>
-              <ul>
-                <li>Public launch of the Astralux app on iOS and Android with core mining functionality.</li>
-                <li>Implementation of Google Sign-In with a welcome bonus.</li>
-                <li>Activation of the 10-day streak bonus system.</li>
-              </ul>
-
-              <h3>🚀 Phase 2: Growth & Economy</h3>
-              <ul>
-                <li>Launch of the high-value referral program.</li>
-                <li>Activation of the in-app wallet for Mini-to-ASLX conversion and withdrawal requests.</li>
-                <li>Implementation of deep linking for seamless referral onboarding.</li>
-              </ul>
-
-              <h3>🔮 Phase 3: Full On-Chain Integration</h3>
-              <ul>
-                <li>Integration of a secure, in-app EVM wallet for users to create or import their own Polygon address.</li>
-                <li>Display of live on-chain ASLX balances directly within the app.</li>
-                <li>Activation of automated, batched airdrops for processing withdrawals.</li>
-              </ul>
-
-              <h3>🌟 Phase 4: Ecosystem Expansion & Listing</h3>
-              <ul>
-                <li>Pursue listing on a decentralized exchange (DEX) after a critical mass of tokens has been distributed to the community.</li>
-                <li>Provide liquidity to create a stable trading market.</li>
-                <li>Explore community governance models and utility-expanding partnerships.</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Disclaimer */}
-          <Card>
-            <CardHeader>
-              <CardTitle>8. Disclaimer</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-4">
-              <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                This whitepaper is for informational purposes only and does not constitute an offer to sell, a solicitation of an offer to buy, or a recommendation for any security or investment product. The information presented is not investment advice. The Astralux team makes no warranties or representations as to the success of the project. Digital assets are subject to a number of risks, including price volatility and loss of principal. Please conduct your own research before participating in the Astralux ecosystem.
-              </p>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none space-y-6">
+              <div className="space-y-4">
+                <div>
+                  <p className="leading-relaxed"><strong>Phase 0 (Completed):</strong> Smart contract deployment, token distribution to allocation wallets, and core infrastructure setup.</p>
+                </div>
+                <div>
+                  <p className="leading-relaxed"><strong>Phase 1 (In Progress):</strong> Public app launch on iOS and Android, implementation of Google Sign-In, and activation of the streak bonus system.</p>
+                </div>
+                <div>
+                  <p className="leading-relaxed"><strong>Phase 2 (Growth & Economy):</strong> Launch of the referral program, activation of in-app conversion and withdrawal requests.</p>
+                </div>
+                <div>
+                  <p className="leading-relaxed"><strong>Phase 3 (Full On-Chain Integration):</strong> Integration of a secure in-app EVM wallet and display of live on-chain balances.</p>
+                </div>
+                <div>
+                  <p className="leading-relaxed"><strong>Phase 4 (Ecosystem Expansion):</strong> Pursue listing on a DEX, provide liquidity, and explore community governance.</p>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
