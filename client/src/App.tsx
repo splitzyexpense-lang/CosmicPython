@@ -10,6 +10,7 @@ import { useScrollRestoration } from "./hooks/use-scroll-restoration";
 
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import About from "@/pages/about";
 import Tokenomics from "@/pages/tokenomics";
 import Roadmap from "@/pages/roadmap";
 import HowToEarn from "@/pages/how-to-earn";
@@ -38,6 +39,7 @@ function Router() {
       <main>
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/about" component={About} />
           <Route path="/tokenomics" component={Tokenomics} />
           <Route path="/roadmap" component={Roadmap} />
           <Route path="/how-to-earn" component={HowToEarn} />
