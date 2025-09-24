@@ -195,13 +195,13 @@ export default function Support() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <a
-                    href="https://discord.gg/astralux"
+                    href="https://t.me/AstraluxOfficial"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center px-4 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg font-medium transition-all"
-                    data-testid="button-discord"
+                    className="flex items-center justify-center px-4 py-3 bg-[#0088cc] hover:bg-[#006699] text-white rounded-lg font-medium transition-all"
+                    data-testid="button-telegram"
                   >
-                    Join Discord
+                    Join Telegram
                   </a>
                   <a
                     href="https://twitter.com/astralux_aslx"
@@ -272,7 +272,7 @@ export default function Support() {
                   <h4 className="font-semibold mb-2">Before Contacting Support</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Check our FAQ section</li>
-                    <li>• Search our Discord community</li>
+                    <li>• Search our Telegram community</li>
                     <li>• Ensure you have the latest app version</li>
                     <li>• Include relevant screenshots if applicable</li>
                   </ul>

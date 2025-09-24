@@ -144,12 +144,12 @@ export default function NewsPost() {
                   </Button>
                 </Link>
                 <a
-                  href="https://discord.gg/astralux"
+                  href="https://t.me/AstraluxOfficial"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-4 py-2 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg font-medium transition-all"
+                  className="inline-flex items-center justify-center px-4 py-2 bg-[#0088cc] hover:bg-[#006699] text-white rounded-lg font-medium transition-all"
                 >
-                  Join Discord
+                  Join Telegram
                 </a>
                 <a
                   href="https://twitter.com/astralux_aslx"

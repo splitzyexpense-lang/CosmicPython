@@ -3,33 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { getAllPosts } from "@/lib/posts";
 
-const newsUpdates = [
-  {
-    title: "Get Ready for Launch! The Astralux App Arrives October 3rd! 🚀",
-    slug: "app-launch-october-3rd",
-    excerpt: "Mark your calendars! We are thrilled to announce the official launch date for the Astralux mobile app. On Friday, October 3rd, 2025, the app will be available for download on both iOS and Android devices. Prepare to start your journey to earn real ASLX cryptocurrency simply by engaging with the app. Be among the first to join our community, start mining your ASLX Mini rewards, and build your 10-day streak for a bonus.",
-    date: "September 24, 2025",
-    category: "Product Update",
-    featured: true
-  },
-  {
-    title: "It's Official: ASLX Token is Live on the Polygon Network! ✅",
-    slug: "aslx-token-live-polygon",
-    excerpt: "We have reached a foundational milestone for the Astralux project. On September 15th, 2025, the official Astralux (ASLX) ERC-20 smart contract was successfully deployed to the Polygon network. A total supply of 3,300,000 ASLX has been minted. In line with our community-first approach, 75% of this supply (2,475,000 ASLX) is allocated to the Airdrop Rewards Wallet.",
-    date: "September 15, 2025",
-    category: "Technology",
-    featured: true
-  }
-];
-
-const categories = ["All", "Product Update", "Technology"];
+const categories = ["All", "Product Update", "Technology", "Security"];
 
 export default function NewsIndex() {
-  // In a real implementation, this would use the posts from getAllPosts()
-  // For now, we'll use the static data above
-  
-  const featuredPosts = newsUpdates.filter(post => post.featured);
-  const regularPosts = newsUpdates.filter(post => !post.featured);
+  // Use the actual posts from the posts library
+  const allPosts = getAllPosts();
+  const featuredPosts = allPosts.filter(post => post.featured);
+  const regularPosts = allPosts.filter(post => !post.featured);
 
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
