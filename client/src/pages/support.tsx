@@ -183,6 +183,16 @@ export default function Support() {
                 <p className="text-muted-foreground">
                   Get faster help from our community or reach out directly:
                 </p>
+                <div className="mb-4 p-4 bg-secondary/20 rounded-lg border border-border">
+                  <p className="text-sm font-medium text-foreground mb-1">Direct Email Support</p>
+                  <a 
+                    href="mailto:support@getastralux.com" 
+                    className="text-primary hover:text-primary/80 font-mono text-sm"
+                    data-testid="link-support-email"
+                  >
+                    support@getastralux.com
+                  </a>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <a
                     href="https://discord.gg/astralux"
