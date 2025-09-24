@@ -204,7 +204,7 @@ export default function Home() {
               </p>
               <div className="space-y-4">
                 <StatsWidget data-testid="stats-widget-home" />
-                <div className="flex flex-wrap gap-2 justify-center">
+                <div className="flex gap-2 justify-center">
                   <a
                     href="https://x.com/AstraluxSupport"
                     target="_blank"
@@ -219,18 +219,9 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-[#229ED9] hover:bg-[#1E8BC3] px-3 py-1 rounded text-sm transition-all text-white font-medium"
-                    data-testid="button-telegram-channel"
+                    data-testid="button-telegram"
                   >
-                    📢 Announcements
-                  </a>
-                  <a
-                    href="https://t.me/AstraluxCommunity"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#229ED9] hover:bg-[#1E8BC3] px-3 py-1 rounded text-sm transition-all text-white font-medium"
-                    data-testid="button-telegram-group"
-                  >
-                    💬 Community
+                    Telegram
                   </a>
                 </div>
               </div>
