@@ -289,16 +289,13 @@ export default function Home() {
                   
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button 
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
-                      data-testid="button-foundation-learn-more"
-                    >
-                      Learn More
-                    </Button>
-                    <Button 
+                      asChild
                       className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
                       data-testid="button-foundation-join"
                     >
-                      Join Community
+                      <a href="https://t.me/AstraluxCommunity" target="_blank" rel="noopener noreferrer">
+                        Join Community
+                      </a>
                     </Button>
                   </div>
                 </div>
