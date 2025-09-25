@@ -144,11 +144,18 @@ export default function Tokenomics() {
               <div>
                 <h3 className="font-semibold">Contract Address</h3>
                 <p className="text-sm text-muted-foreground font-mono">
-                  0x1234...5678 (Polygon Network)
+                  0x556cAAa810377c85c88A941f58Bf69E3A38C4219 (Polygon Network)
                 </p>
               </div>
-              <Button variant="outline">
-                View on PolygonScan
+              <Button variant="outline" asChild>
+                <a 
+                  href="https://amoy.polygonscan.com/address/0x556cAAa810377c85c88A941f58Bf69E3A38C4219" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  data-testid="button-polygon-scan"
+                >
+                  View on PolygonScan
+                </a>
               </Button>
             </div>
           </CardContent>
