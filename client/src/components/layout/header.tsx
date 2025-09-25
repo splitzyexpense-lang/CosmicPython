@@ -63,13 +63,6 @@ export default function Header() {
           <div className="flex items-center justify-end">
             {/* Desktop Right Side Cluster */}
             <div className="hidden md:flex items-center space-x-2">
-              {/* Live Stats Pill - Only show on large screens */}
-              {liveStats && (
-                <div className="hidden xl:flex items-center space-x-1.5 bg-secondary/30 text-muted-foreground px-2.5 py-1 rounded-full text-xs border border-border/50" data-testid="live-stats-pill">
-                  <Activity className="h-3 w-3 text-primary" />
-                  <span className="font-mono">{(liveStats.totalMiners / 1000).toFixed(1)}k</span>
-                </div>
-              )}
               
               {/* Whitepaper Button - Hide on smaller screens */}
               <Link href="/whitepaper" className="hidden lg:block">
