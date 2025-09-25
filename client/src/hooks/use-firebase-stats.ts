@@ -58,28 +58,22 @@ export function useFirebaseStats() {
 
   useEffect(() => {
     if (!db) {
-      console.log('🔥 Firebase not initialized');
       setError('Firebase not initialized');
       setIsLoading(false);
       return;
     }
 
-    console.log('🔥 Setting up Firebase listener for stats/miners...');
-
     // Set up real-time listener for the stats document
     const unsubscribe = onSnapshot(
       doc(db, 'stats', 'miners'),
       (doc) => {
-        console.log('🔥 Firebase document snapshot received');
         if (doc.exists()) {
           const data = doc.data();
-          console.log('🔥 Document exists with data:', data);
           setStats({
             totalMiners: data.totalMiners || 0,
             lastUpdated: data.lastUpdated || new Date().toISOString()
           });
         } else {
-          console.log('🔥 Document does not exist - using default values');
           setStats({
             totalMiners: 0,
             lastUpdated: new Date().toISOString()
@@ -89,17 +83,15 @@ export function useFirebaseStats() {
         setError(null);
       },
       (err) => {
-        console.error('🔥 Error listening to Firebase stats:', err);
+        console.error('Error listening to Firebase stats:', err);
         // If permission denied, fall back to default value
         if (err.code === 'permission-denied') {
-          console.log('🔥 Permission denied - using fallback values');
           setStats({
             totalMiners: 0,
             lastUpdated: new Date().toISOString()
           });
           setError('Firebase access not configured - using default values');
         } else {
-          console.log('🔥 Other Firebase error:', err.message);
           setError(err.message);
         }
         setIsLoading(false);
