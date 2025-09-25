@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useFirebaseStats } from "@/hooks/use-firebase-stats";
-import { useLiveStats } from "@/hooks/use-live-stats";
+import { useAirdropStats } from "@/hooks/use-airdrop-stats";
 import { Loader2 } from "lucide-react";
 
 interface StatsWidgetProps {
@@ -9,9 +9,9 @@ interface StatsWidgetProps {
 
 export default function StatsWidget({ className, ...props }: StatsWidgetProps) {
   const { stats: firebaseStats, isLoading: firebaseLoading, error: firebaseError } = useFirebaseStats();
-  const { data: liveStats, isLoading: liveStatsLoading, error: liveStatsError } = useLiveStats();
+  const { totalTransferred, isLoading: airdropLoading, error: airdropError } = useAirdropStats();
 
-  if (firebaseError && liveStatsError) {
+  if (firebaseError && airdropError) {
     return (
       <div className={`text-center text-muted-foreground text-sm ${className}`} {...props}>
         <p data-testid="stats-error">Unable to load stats</p>
@@ -35,15 +35,15 @@ export default function StatsWidget({ className, ...props }: StatsWidgetProps) {
       </Card>
       <Card className="bg-secondary/50">
         <CardContent className="p-3">
-          {liveStatsLoading ? (
+          {airdropLoading ? (
             <Loader2 className="h-4 w-4 animate-spin mx-auto text-accent" data-testid="airdrop-loading" />
-          ) : liveStatsError ? (
+          ) : airdropError ? (
             <div className="font-bold text-xl text-red-500" data-testid="airdrop-error">
               Error
             </div>
           ) : (
             <div className="font-bold text-xl text-accent" data-testid="stats-coins-transferred">
-              {liveStats?.totalMined?.toLocaleString() || "0"}
+              {totalTransferred}
             </div>
           )}
           <div className="text-xs text-muted-foreground">Total Coins Transferred</div>
