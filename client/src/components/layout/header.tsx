@@ -5,6 +5,7 @@ import { Menu, Activity, FileText } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
 import { useLiveStats } from "@/hooks/use-live-stats";
+import { useContractStats } from "@/hooks/use-contract-stats";
 import astraluxLogo from "@assets/logo_1758657603350.png";
 
 const navigation = [
@@ -21,6 +22,7 @@ export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { data: liveStats } = useLiveStats();
+  const { totalMined, isLoading: contractLoading, error: contractError } = useContractStats();
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50" data-testid="header">
@@ -63,6 +65,13 @@ export default function Header() {
           <div className="flex items-center justify-end">
             {/* Desktop Right Side Cluster */}
             <div className="hidden md:flex items-center space-x-2">
+              {/* Total Mined Display */}
+              <div className="hidden xl:flex items-center space-x-1.5 bg-secondary/30 text-muted-foreground px-2.5 py-1 rounded-full text-xs border border-border/50" data-testid="total-mined-display">
+                <Activity className="h-3 w-3 text-primary" />
+                <span className="font-mono">
+                  {contractLoading ? 'Loading...' : contractError ? 'Error' : `Total Mined: ${totalMined}`}
+                </span>
+              </div>
               
               {/* Whitepaper Button - Hide on smaller screens */}
               <Link href="/whitepaper" className="hidden lg:block">
