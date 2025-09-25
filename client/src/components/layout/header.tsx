@@ -69,7 +69,7 @@ export default function Header() {
               <div className="hidden xl:flex items-center space-x-1.5 bg-secondary/30 text-muted-foreground px-2.5 py-1 rounded-full text-xs border border-border/50" data-testid="total-mined-display">
                 <Activity className="h-3 w-3 text-primary" />
                 <span className="font-mono">
-                  {contractLoading ? 'Loading...' : contractError ? 'Error' : `Total Mined: ${totalMined}`}
+                  {contractLoading ? 'Loading...' : contractError ? 'Error' : `Total Supply: ${totalMined}`}
                 </span>
               </div>
               
