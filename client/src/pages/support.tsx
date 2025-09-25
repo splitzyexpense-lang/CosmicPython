@@ -204,13 +204,13 @@ export default function Support() {
                     Join Telegram
                   </a>
                   <a
-                    href="https://twitter.com/astralux_aslx"
+                    href="https://x.com/AstraluxSupport"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-4 py-3 bg-[#1DA1F2] hover:bg-[#1991DA] text-white rounded-lg font-medium transition-all"
                     data-testid="button-twitter"
                   >
-                    Follow on X
+                    X (Twitter)
                   </a>
                 </div>
               </CardContent>
