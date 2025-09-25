@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import auditReportPdf from "@assets/Smart Contract Security Audit Report(Initial)_1758794851558.pdf";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 
 const tokenData = [
@@ -135,8 +136,14 @@ export default function Tokenomics() {
                   Our smart contracts have been professionally audited for security vulnerabilities.
                 </p>
               </div>
-              <Button className="bg-primary hover:bg-primary/90">
-                View Audit Report
+              <Button className="bg-primary hover:bg-primary/90" asChild>
+                <a 
+                  href={auditReportPdf}
+                  download="Astralux_Security_Audit_Report.pdf"
+                  data-testid="button-audit-report"
+                >
+                  View Audit Report
+                </a>
               </Button>
             </div>
             
