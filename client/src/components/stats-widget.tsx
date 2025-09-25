@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { useLiveStats } from "@/hooks/use-live-stats";
+import { useFirebaseStats } from "@/hooks/use-firebase-stats";
 import { useAirdropStats } from "@/hooks/use-airdrop-stats";
 import { Loader2 } from "lucide-react";
 
@@ -8,7 +8,7 @@ interface StatsWidgetProps {
 }
 
 export default function StatsWidget({ className, ...props }: StatsWidgetProps) {
-  const { data: stats, isLoading, error } = useLiveStats();
+  const { stats: firebaseStats, isLoading, error } = useFirebaseStats();
   const { totalTransferred, isLoading: airdropLoading, error: airdropError } = useAirdropStats();
 
   if (error && airdropError) {
@@ -27,7 +27,7 @@ export default function StatsWidget({ className, ...props }: StatsWidgetProps) {
             <Loader2 className="h-4 w-4 animate-spin mx-auto text-accent" data-testid="stats-loading" />
           ) : (
             <div className="font-bold text-xl text-accent" data-testid="stats-total-miners">
-              {stats?.totalMiners?.toLocaleString() || "0"}
+              {firebaseStats?.totalMiners?.toLocaleString() || "0"}
             </div>
           )}
           <div className="text-xs text-muted-foreground">Total Miners</div>

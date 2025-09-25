@@ -1,5 +1,5 @@
-// TODO: Initialize Firebase when environment variables are provided
-// This is a placeholder for Firebase configuration
+import { initializeApp, FirebaseApp } from 'firebase/app';
+import { getFirestore, Firestore } from 'firebase/firestore';
 
 export interface FirebaseConfig {
   apiKey: string;
@@ -20,8 +20,8 @@ export const firebaseConfig: FirebaseConfig = {
 };
 
 // Firebase will be initialized when proper environment variables are provided
-let app: any = null;
-let db: any = null;
+let app: FirebaseApp | null = null;
+let db: Firestore | null = null;
 
 export const initializeFirebase = () => {
   if (!firebaseConfig.apiKey) {
@@ -30,12 +30,8 @@ export const initializeFirebase = () => {
   }
 
   try {
-    // TODO: Uncomment when Firebase is needed
-    // import { initializeApp } from 'firebase/app';
-    // import { getFirestore } from 'firebase/firestore';
-    
-    // app = initializeApp(firebaseConfig);
-    // db = getFirestore(app);
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
     
     console.log("Firebase initialized successfully");
     return { app, db };
@@ -44,5 +40,8 @@ export const initializeFirebase = () => {
     return null;
   }
 };
+
+// Initialize Firebase immediately
+initializeFirebase();
 
 export { app, db };
