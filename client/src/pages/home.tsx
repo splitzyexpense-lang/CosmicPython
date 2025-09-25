@@ -156,6 +156,20 @@ export default function Home() {
             </CardContent>
           </Card>
 
+          {/* Live Stats Block */}
+          <Card className="hover-lift" data-testid="card-stats-widget">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-bold mb-4 flex items-center">
+                <span className="mr-3 text-primary">📊</span>
+                Live Stats
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Real-time statistics from our ecosystem and smart contracts.
+              </p>
+              <StatsWidget data-testid="stats-widget" />
+            </CardContent>
+          </Card>
+
           {/* Roadmap Preview */}
           <Card className="hover-lift" data-testid="card-roadmap">
             <CardContent className="p-8">
