@@ -6,7 +6,7 @@ import TrustBadges from "@/components/trust-badges";
 import AppDownload from "@/components/app-download";
 import { Link } from "wouter";
 import { trackEvent } from "@/lib/analytics";
-import astraluxMainLogo from "@assets/logo_1758663230814.png?url";
+import astraluxMainLogo from "@assets/no bg_1758988735385.png?url";
 
 export default function Home() {
   const handleDownloadClick = () => {
@@ -316,7 +316,7 @@ export default function Home() {
                 
                 <div className="text-center">
                   <img 
-                    src="/astralux-foundation-logo.png" 
+                    src={astraluxMainLogo} 
                     alt="Astralux Foundation Logo" 
                     className="w-48 h-48 mx-auto cosmic-glow"
                     data-testid="img-foundation-logo"
