@@ -6,7 +6,7 @@ import { Link, useLocation } from "wouter";
 import AppDownload from "@/components/app-download";
 import { useLiveStats } from "@/hooks/use-live-stats";
 import { useContractStats } from "@/hooks/use-contract-stats";
-import astraluxLogo from "@assets/no bg_1758988735385.png";
+import astraluxLogo from "@assets/no bg_1758989379956.png";
 
 const navigation = [
   { name: "Home", href: "/" },

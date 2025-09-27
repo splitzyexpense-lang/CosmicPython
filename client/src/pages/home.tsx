@@ -6,7 +6,7 @@ import TrustBadges from "@/components/trust-badges";
 import AppDownload from "@/components/app-download";
 import { Link } from "wouter";
 import { trackEvent } from "@/lib/analytics";
-import astraluxMainLogo from "@assets/no bg_1758988735385.png?url";
+import astraluxMainLogo from "@assets/no bg_1758989379956.png?url";
 
 export default function Home() {
   const handleDownloadClick = () => {
