@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import StarfieldAnimation from "@/components/starfield-animation";
-import StatsWidget from "@/components/stats-widget";
 import TrustBadges from "@/components/trust-badges";
 import AppDownload from "@/components/app-download";
 import { Link } from "wouter";
@@ -153,20 +152,6 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-            </CardContent>
-          </Card>
-
-          {/* Live Stats Block */}
-          <Card className="hover-lift" data-testid="card-stats-widget">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-4 flex items-center">
-                <span className="mr-3 text-primary">📊</span>
-                Live Stats
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Real-time statistics from our ecosystem and smart contracts.
-              </p>
-              <StatsWidget data-testid="stats-widget" />
             </CardContent>
           </Card>
 
