@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import auditReportPdf from "@assets/Smart Contract Security Audit Report initial_1758796581260.pdf";
+import auditReportPdf from "@assets/Astralux_Security_Audit_Report_1762863868049.pdf";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 
 const tokenData = [
@@ -149,14 +149,14 @@ export default function Tokenomics() {
             
             <div className="flex items-center justify-between p-4 bg-secondary/30 rounded-lg">
               <div>
-                <h3 className="font-semibold">Contract Address</h3>
+                <h3 className="font-semibold">Contract Address - Mainnet (Polygon)</h3>
                 <p className="text-sm text-muted-foreground font-mono">
-                  0x556cAAa810377c85c88A941f58Bf69E3A38C4219 (Polygon Network)
+                  0x959b5e1e4d3a8Eced9c13cD00ABADF88032C9826
                 </p>
               </div>
               <Button variant="outline" asChild>
                 <a 
-                  href="https://amoy.polygonscan.com/address/0x556cAAa810377c85c88A941f58Bf69E3A38C4219" 
+                  href="https://polygonscan.com/address/0x959b5e1e4d3a8Eced9c13cD00ABADF88032C9826" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   data-testid="button-polygon-scan"
