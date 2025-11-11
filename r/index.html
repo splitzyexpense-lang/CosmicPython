@@ -1,38 +1,385 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astralux - Join the Crypto Mining Revolution</title>
+    <meta
+      name="description"
+      content="Join Astralux and start earning cryptocurrency through mobile mining. Download the app and use this referral link to get started."
+    />
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Join Astralux - Crypto Mining App" />
+    <meta
+      property="og:description"
+      content="Start earning cryptocurrency through mobile mining. Join with this referral link!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://getastralux.com" />
+    <meta property="og:image" content="https://getastralux.com/logo.png" />
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- App Store Meta Tags -->
+    <meta property="al:android:url" content="astralux://refer" />
+    <meta property="al:android:package" content="com.astralux.app" />
+    <meta property="al:android:app_name" content="Astralux" />
+    <meta property="al:ios:url" content="astralux://refer" />
+    <meta property="al:ios:app_name" content="Astralux" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+    <!-- Apple Smart Banner -->
+    <meta
+      name="apple-itunes-app"
+      content="app-id=YOUR_APP_ID, app-argument=astralux://refer"
+    />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="astralux">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+      .container {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+      }
 
-  <title>astralux</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+      .logo {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .referral-section {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .referral-code {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .referral-code:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.05);
+      }
+
+      .status {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+        border-left: 4px solid #4caf50;
+      }
+
+      .download-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+      }
+
+      .download-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .features {
+        margin-top: 2rem;
+        text-align: left;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .feature {
+        margin: 0.8rem 0;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .feature::before {
+        content: "✓";
+        margin-right: 0.8rem;
+        color: #4caf50;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .back-link:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-note {
+        font-size: 0.85rem;
+        opacity: 0.7;
+        margin-top: 2rem;
+        line-height: 1.4;
+      }
+
+      .loading {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          font-size: 2rem;
+        }
+        .referral-code {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+        }
+        .download-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .download-btn {
+          width: 200px;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/" class="back-link">← Back to Astralux</a>
+
+    <div class="container">
+      <div class="logo">⚡ Astralux</div>
+      <div class="subtitle">Join the Crypto Mining Revolution</div>
+
+      <div class="referral-section">
+        <p style="margin-bottom: 1rem">
+          You've been invited to join Astralux! Use the referral code below to
+          get started.
+        </p>
+
+        <div class="referral-code loading" id="referral-code">Loading...</div>
+
+        <div class="status" id="status">
+          🔄 Attempting to open Astralux app...
+        </div>
+      </div>
+
+      <div class="download-buttons">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.astralux.app"
+          class="download-btn"
+          id="android-link"
+        >
+          🤖 Download for Android
+        </a>
+        <a
+          href="https://apps.apple.com/app/astralux"
+          class="download-btn"
+          id="ios-link"
+        >
+          📱 Download for iOS
+        </a>
+      </div>
+
+      <div class="features">
+        <div class="feature">Earn cryptocurrency while you sleep</div>
+        <div class="feature">Refer friends and boost your earnings</div>
+        <div class="feature">Secure and transparent mining</div>
+        <div class="feature">Easy withdrawal to your wallet</div>
+      </div>
+
+      <div class="footer-note">
+        If the app doesn't open automatically, download it from your app store
+        and enter the referral code manually during signup.
+      </div>
+    </div>
+
+    <script>
+      console.log("🚀 Astralux Referral Page Loaded");
+
+      // Get referral code from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const referralCode = urlParams.get("code");
+
+      console.log("📋 Referral code from URL:", referralCode);
+
+      const referralCodeEl = document.getElementById("referral-code");
+      const statusEl = document.getElementById("status");
+
+      // Display the referral code
+      if (referralCode && referralCode.trim()) {
+        referralCodeEl.textContent = referralCode.toUpperCase();
+        referralCodeEl.classList.remove("loading");
+
+        // Try to open the app with deep link
+        const appLink = `astralux://refer?code=${referralCode}`;
+        console.log("📱 Attempting to open app with:", appLink);
+
+        // Immediate attempt to open app
+        window.location.href = appLink;
+
+        // Track app opening attempt
+        let appOpened = false;
+        const startTime = Date.now();
+
+        // Check if app opened after delay
+        const checkAppOpened = () => {
+          const timeDiff = Date.now() - startTime;
+
+          if (timeDiff > 2500 && !document.hidden) {
+            // App likely didn't open
+            statusEl.innerHTML = `📱 App not installed? Download it below and use code: <strong>${referralCode.toUpperCase()}</strong>`;
+            statusEl.style.borderLeftColor = "#FF9800";
+            console.log("❌ App likely not installed");
+          } else if (document.hidden) {
+            // App likely opened (page became hidden)
+            appOpened = true;
+            statusEl.textContent = "✅ Opening Astralux app...";
+            statusEl.style.borderLeftColor = "#4CAF50";
+            console.log("✅ App likely opened (page hidden)");
+          }
+        };
+
+        setTimeout(checkAppOpened, 3000);
+
+        // Fallback to app stores after longer delay
+        setTimeout(() => {
+          if (!appOpened && !document.hidden) {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            console.log(
+              "🏪 App did not open, checking platform. iOS:",
+              isIOS,
+              "Android:",
+              isAndroid,
+            );
+
+            if (isAndroid) {
+              console.log("→ Redirecting to Google Play Store");
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=com.astralux.app";
+            } else if (isIOS) {
+              console.log("→ Redirecting to App Store");
+              window.location.href = "https://apps.apple.com/app/astralux";
+            } else {
+              statusEl.innerHTML = `💻 Desktop detected. Download the app on your mobile device and use code: <strong>${referralCode.toUpperCase()}</strong>`;
+            }
+          }
+        }, 5000);
+      } else {
+        // No referral code found
+        referralCodeEl.textContent = "No Code Provided";
+        referralCodeEl.classList.remove("loading");
+        referralCodeEl.style.background = "rgba(255, 152, 0, 0.2)";
+        referralCodeEl.style.borderColor = "rgba(255, 152, 0, 0.5)";
+        statusEl.innerHTML =
+          "❌ No referral code found in URL<br><small>Make sure your referral link includes ?code=YOUR_CODE</small>";
+        statusEl.style.borderLeftColor = "#f44336";
+        console.log("❌ No referral code found in URL");
+      }
+
+      // Handle visibility change to detect if app opened
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden && referralCode) {
+          statusEl.textContent = "✅ Opening Astralux app...";
+          statusEl.style.borderLeftColor = "#4CAF50";
+          console.log("👁️ Page became hidden - app likely opened");
+        }
+      });
+
+      // Debug logging
+      console.log("🌐 Current URL:", window.location.href);
+      console.log(
+        "🔍 All URL parameters:",
+        Object.fromEntries(urlParams.entries()),
+      );
+      console.log("📱 User Agent:", navigator.userAgent);
+
+      // Update page title with referral code
+      if (referralCode) {
+        document.title = `Astralux - Join with code ${referralCode.toUpperCase()}`;
+      }
+    </script>
+  </body>
 </html>
