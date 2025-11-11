@@ -1,21 +1,4 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
-      ]
-    }
-  ],
   "hosting": {
     "public": "dist/public",
     "ignore": [
@@ -49,54 +32,5 @@
         ]
       }
     ]
-  },
-  "emulators": {
-    "functions": {
-      "host": "localhost",
-      "port": 5001
-    },
-    "firestore": {
-      "host": "localhost",
-      "port": 8080
-    },
-    "auth": {
-      "host": "localhost",
-      "port": 9099
-    },
-    "ui": {
-      "enabled": true,
-      "host": "localhost",
-      "port": 4000
-    },
-    "logging": {
-      "enabled": true
-    },
-    "hosting": {
-      "port": 5000
-    },
-    "singleProjectMode": true
-  },
-  "flutter": {
-    "platforms": {
-      "android": {
-        "default": {
-          "projectId": "astralux-8e6e4",
-          "appId": "1:160782883974:android:f714369fe5953e0261c507",
-          "fileOutput": "android/app/google-services.json"
-        }
-      },
-      "dart": {
-        "lib/firebase_options.dart": {
-          "projectId": "astralux-8e6e4",
-          "configurations": {
-            "android": "1:160782883974:android:f714369fe5953e0261c507",
-            "ios": "1:160782883974:ios:1d3524e35c190f7d61c507",
-            "macos": "1:160782883974:ios:1d3524e35c190f7d61c507",
-            "web": "1:160782883974:web:3be2af0ad47a00cd61c507",
-            "windows": "1:160782883974:web:cf400c7c0b52d09461c507"
-          }
-        }
-      }
-    }
   }
 }
