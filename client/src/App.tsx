@@ -23,6 +23,7 @@ import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
 import Whitepaper from "@/pages/whitepaper";
 import Team from "@/pages/team";
+import Referral from "@/pages/referral";
 
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -40,6 +41,9 @@ function Router() {
       <main>
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/r" component={Referral} />
+          <Route path="/refer" component={Referral} />
+          <Route path="/invite" component={Referral} />
           <Route path="/about" component={About} />
           <Route path="/tokenomics" component={Tokenomics} />
           <Route path="/roadmap" component={Roadmap} />
