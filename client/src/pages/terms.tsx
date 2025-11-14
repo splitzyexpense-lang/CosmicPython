@@ -172,7 +172,14 @@ export default function Terms() {
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                If you have any questions about these Terms, please contact us through the channels provided on our website.
+                If you have any questions about these Terms, please contact us at{' '}
+                <a 
+                  href="mailto:support@getastralux.com" 
+                  className="text-primary hover:underline"
+                  data-testid="link-support-email"
+                >
+                  support@getastralux.com
+                </a>
               </p>
             </CardContent>
           </Card>
