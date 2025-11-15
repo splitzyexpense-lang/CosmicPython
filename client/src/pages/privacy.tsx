@@ -132,11 +132,117 @@ export default function Privacy() {
 
           <Card>
             <CardHeader>
-              <CardTitle>8. Contact Us</CardTitle>
+              <CardTitle>8. Your Rights Under GDPR (EU Users)</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):</p>
+              
+              <p><strong>Right to Access</strong></p>
+              <ul>
+                <li>You can request a copy of all personal data we hold about you</li>
+                <li>Contact us at <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline" data-testid="link-privacy-email">privacy@getastralux.com</a> to request your data</li>
+              </ul>
+
+              <p><strong>Right to Rectification</strong></p>
+              <ul>
+                <li>You can update incorrect information through the App settings</li>
+                <li>Request corrections by contacting our support team</li>
+              </ul>
+
+              <p><strong>Right to Erasure (Right to be Forgotten)</strong></p>
+              <ul>
+                <li>You can request deletion of your account and associated data</li>
+                <li>Email <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a> with "Delete My Account" in the subject</li>
+                <li>Some data may be retained for legal compliance (e.g., transaction records)</li>
+              </ul>
+
+              <p><strong>Right to Data Portability</strong></p>
+              <ul>
+                <li>You can export your wallet data using the "Export Wallet" feature in-app</li>
+                <li>Request a full data export by contacting <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a></li>
+                <li>Data will be provided in JSON or CSV format within 30 days</li>
+              </ul>
+
+              <p><strong>Right to Restriction of Processing</strong></p>
+              <ul>
+                <li>You can limit how we process your data in certain circumstances</li>
+                <li>Contact us to discuss specific restrictions</li>
+              </ul>
+
+              <p><strong>Right to Object</strong></p>
+              <ul>
+                <li>You can object to processing based on legitimate interests</li>
+                <li>You can opt out of marketing communications</li>
+                <li>You can disable analytics tracking in App settings</li>
+              </ul>
+
+              <p><strong>Right to Withdraw Consent</strong></p>
+              <ul>
+                <li>Where we rely on consent, you can withdraw it at any time</li>
+                <li>Withdrawing consent does not affect prior processing</li>
+              </ul>
+
+              <p><strong>Right to Lodge a Complaint</strong></p>
+              <ul>
+                <li>You can file a complaint with your local data protection authority</li>
+                <li>Find your authority at: <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" data-testid="link-edpb">EDPB Members</a></li>
+              </ul>
+
+              <p><strong>How to Exercise Your Rights</strong></p>
+              <p>To exercise any of these rights, contact us at:</p>
+              <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a></li>
+                <li><strong>Response Time:</strong> Within 30 days of your request</li>
+                <li><strong>Verification:</strong> We may require identity verification to protect your data</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>9. Legal Basis for Processing (GDPR)</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>We process your personal data based on the following legal grounds:</p>
+              
+              <ul>
+                <li><strong>Contractual Necessity:</strong> To provide the App services you've requested (mining, conversions, withdrawals)</li>
+                <li><strong>Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure security</li>
+                <li><strong>Consent:</strong> For marketing communications and optional features (can be withdrawn anytime)</li>
+                <li><strong>Legal Obligations:</strong> To comply with financial regulations and legal requirements</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>10. Data Retention (GDPR)</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <ul>
+                <li><strong>Account Data:</strong> Retained while your account is active</li>
+                <li><strong>Transaction Records:</strong> Retained for 7 years for legal/tax compliance</li>
+                <li><strong>Analytics Data:</strong> Anonymized after 24 months</li>
+                <li><strong>Deleted Accounts:</strong> Personal data erased within 90 days of deletion request</li>
+                <li><strong>Blockchain Data:</strong> On-chain transactions are permanent and cannot be deleted</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>11. Contact Us</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                If you have any questions about this Privacy Policy, please contact us through the support channels provided on our website.
+                If you have any questions about this Privacy Policy, please contact us at{' '}
+                <a 
+                  href="mailto:privacy@getastralux.com" 
+                  className="text-primary hover:underline"
+                  data-testid="link-privacy-contact"
+                >
+                  privacy@getastralux.com
+                </a>
               </p>
             </CardContent>
           </Card>
