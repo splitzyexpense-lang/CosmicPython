@@ -140,7 +140,7 @@ export default function Privacy() {
               <p><strong>Right to Access</strong></p>
               <ul>
                 <li>You can request a copy of all personal data we hold about you</li>
-                <li>Contact us at <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline" data-testid="link-privacy-email">privacy@getastralux.com</a> to request your data</li>
+                <li>Contact us at <a href="mailto:support@getastralux.com" className="text-primary hover:underline" data-testid="link-support-email">support@getastralux.com</a> to request your data</li>
               </ul>
 
               <p><strong>Right to Rectification</strong></p>
@@ -152,14 +152,14 @@ export default function Privacy() {
               <p><strong>Right to Erasure (Right to be Forgotten)</strong></p>
               <ul>
                 <li>You can request deletion of your account and associated data</li>
-                <li>Email <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a> with "Delete My Account" in the subject</li>
+                <li>Email <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a> with "Delete My Account" in the subject</li>
                 <li>Some data may be retained for legal compliance (e.g., transaction records)</li>
               </ul>
 
               <p><strong>Right to Data Portability</strong></p>
               <ul>
                 <li>You can export your wallet data using the "Export Wallet" feature in-app</li>
-                <li>Request a full data export by contacting <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a></li>
+                <li>Request a full data export by contacting <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
                 <li>Data will be provided in JSON or CSV format within 30 days</li>
               </ul>
 
@@ -191,7 +191,7 @@ export default function Privacy() {
               <p><strong>How to Exercise Your Rights</strong></p>
               <p>To exercise any of these rights, contact us at:</p>
               <ul>
-                <li><strong>Email:</strong> <a href="mailto:privacy@getastralux.com" className="text-primary hover:underline">privacy@getastralux.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
                 <li><strong>Response Time:</strong> Within 30 days of your request</li>
                 <li><strong>Verification:</strong> We may require identity verification to protect your data</li>
               </ul>
@@ -204,7 +204,6 @@ export default function Privacy() {
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>We process your personal data based on the following legal grounds:</p>
-              
               <ul>
                 <li><strong>Contractual Necessity:</strong> To provide the App services you've requested (mining, conversions, withdrawals)</li>
                 <li><strong>Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure security</li>
@@ -219,6 +218,7 @@ export default function Privacy() {
               <CardTitle>10. Data Retention (GDPR)</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>We retain your data for the following periods:</p>
               <ul>
                 <li><strong>Account Data:</strong> Retained while your account is active</li>
                 <li><strong>Transaction Records:</strong> Retained for 7 years for legal/tax compliance</li>
@@ -237,11 +237,11 @@ export default function Privacy() {
               <p>
                 If you have any questions about this Privacy Policy, please contact us at{' '}
                 <a 
-                  href="mailto:privacy@getastralux.com" 
+                  href="mailto:support@getastralux.com" 
                   className="text-primary hover:underline"
-                  data-testid="link-privacy-contact"
+                  data-testid="link-support-contact"
                 >
-                  privacy@getastralux.com
+                  support@getastralux.com
                 </a>
               </p>
             </CardContent>
