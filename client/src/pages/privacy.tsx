@@ -10,7 +10,7 @@ export default function Privacy() {
             Astralux Privacy Policy
           </h1>
           <p className="text-xl text-muted-foreground">
-            Effective Date: September 24, 2025
+            Effective Date: November 15, 2025
           </p>
         </div>
 
