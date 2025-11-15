@@ -134,67 +134,85 @@ export default function Privacy() {
             <CardHeader>
               <CardTitle>8. Your Rights Under GDPR (EU Users)</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):</p>
+            <CardContent className="space-y-4 text-base">
+              <p className="text-muted-foreground">If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):</p>
               
-              <p><strong>Right to Access</strong></p>
-              <ul>
-                <li>You can request a copy of all personal data we hold about you</li>
-                <li>Contact us at <a href="mailto:support@getastralux.com" className="text-primary hover:underline" data-testid="link-support-email">support@getastralux.com</a> to request your data</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Access</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can request a copy of all personal data we hold about you</li>
+                  <li>Contact us at <a href="mailto:support@getastralux.com" className="text-primary hover:underline" data-testid="link-support-email">support@getastralux.com</a> to request your data</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Rectification</strong></p>
-              <ul>
-                <li>You can update incorrect information through the App settings</li>
-                <li>Request corrections by contacting our support team</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Rectification</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can update incorrect information through the App settings</li>
+                  <li>Request corrections by contacting our support team</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Erasure (Right to be Forgotten)</strong></p>
-              <ul>
-                <li>You can request deletion of your account and associated data</li>
-                <li>Email <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a> with "Delete My Account" in the subject</li>
-                <li>Some data may be retained for legal compliance (e.g., transaction records)</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Erasure (Right to be Forgotten)</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can request deletion of your account and associated data</li>
+                  <li>Email <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a> with "Delete My Account" in the subject</li>
+                  <li>Some data may be retained for legal compliance (e.g., transaction records)</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Data Portability</strong></p>
-              <ul>
-                <li>You can export your wallet data using the "Export Wallet" feature in-app</li>
-                <li>Request a full data export by contacting <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
-                <li>Data will be provided in JSON or CSV format within 30 days</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Data Portability</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can export your wallet data using the "Export Wallet" feature in-app</li>
+                  <li>Request a full data export by contacting <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
+                  <li>Data will be provided in JSON or CSV format within 30 days</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Restriction of Processing</strong></p>
-              <ul>
-                <li>You can limit how we process your data in certain circumstances</li>
-                <li>Contact us to discuss specific restrictions</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Restriction of Processing</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can limit how we process your data in certain circumstances</li>
+                  <li>Contact us to discuss specific restrictions</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Object</strong></p>
-              <ul>
-                <li>You can object to processing based on legitimate interests</li>
-                <li>You can opt out of marketing communications</li>
-                <li>You can disable analytics tracking in App settings</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Object</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can object to processing based on legitimate interests</li>
+                  <li>You can opt out of marketing communications</li>
+                  <li>You can disable analytics tracking in App settings</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Withdraw Consent</strong></p>
-              <ul>
-                <li>Where we rely on consent, you can withdraw it at any time</li>
-                <li>Withdrawing consent does not affect prior processing</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Withdraw Consent</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>Where we rely on consent, you can withdraw it at any time</li>
+                  <li>Withdrawing consent does not affect prior processing</li>
+                </ul>
+              </div>
 
-              <p><strong>Right to Lodge a Complaint</strong></p>
-              <ul>
-                <li>You can file a complaint with your local data protection authority</li>
-                <li>Find your authority at: <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" data-testid="link-edpb">EDPB Members</a></li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">Right to Lodge a Complaint</h3>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li>You can file a complaint with your local data protection authority</li>
+                  <li>Find your authority at: <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" data-testid="link-edpb">EDPB Members</a></li>
+                </ul>
+              </div>
 
-              <p><strong>How to Exercise Your Rights</strong></p>
-              <p>To exercise any of these rights, contact us at:</p>
-              <ul>
-                <li><strong>Email:</strong> <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
-                <li><strong>Response Time:</strong> Within 30 days of your request</li>
-                <li><strong>Verification:</strong> We may require identity verification to protect your data</li>
-              </ul>
+              <div>
+                <h3 className="font-semibold mb-2">How to Exercise Your Rights</h3>
+                <p className="text-muted-foreground mb-2">To exercise any of these rights, contact us at:</p>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <li><strong>Email:</strong> <a href="mailto:support@getastralux.com" className="text-primary hover:underline">support@getastralux.com</a></li>
+                  <li><strong>Response Time:</strong> Within 30 days of your request</li>
+                  <li><strong>Verification:</strong> We may require identity verification to protect your data</li>
+                </ul>
+              </div>
             </CardContent>
           </Card>
 
@@ -202,13 +220,13 @@ export default function Privacy() {
             <CardHeader>
               <CardTitle>9. Legal Basis for Processing (GDPR)</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We process your personal data based on the following legal grounds:</p>
-              <ul>
-                <li><strong>Contractual Necessity:</strong> To provide the App services you've requested (mining, conversions, withdrawals)</li>
-                <li><strong>Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure security</li>
-                <li><strong>Consent:</strong> For marketing communications and optional features (can be withdrawn anytime)</li>
-                <li><strong>Legal Obligations:</strong> To comply with financial regulations and legal requirements</li>
+            <CardContent className="space-y-4 text-base">
+              <p className="text-muted-foreground">We process your personal data based on the following legal grounds:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><strong className="text-foreground">Contractual Necessity:</strong> To provide the App services you've requested (mining, conversions, withdrawals)</li>
+                <li><strong className="text-foreground">Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure security</li>
+                <li><strong className="text-foreground">Consent:</strong> For marketing communications and optional features (can be withdrawn anytime)</li>
+                <li><strong className="text-foreground">Legal Obligations:</strong> To comply with financial regulations and legal requirements</li>
               </ul>
             </CardContent>
           </Card>
@@ -217,14 +235,14 @@ export default function Privacy() {
             <CardHeader>
               <CardTitle>10. Data Retention (GDPR)</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
-              <p>We retain your data for the following periods:</p>
-              <ul>
-                <li><strong>Account Data:</strong> Retained while your account is active</li>
-                <li><strong>Transaction Records:</strong> Retained for 7 years for legal/tax compliance</li>
-                <li><strong>Analytics Data:</strong> Anonymized after 24 months</li>
-                <li><strong>Deleted Accounts:</strong> Personal data erased within 90 days of deletion request</li>
-                <li><strong>Blockchain Data:</strong> On-chain transactions are permanent and cannot be deleted</li>
+            <CardContent className="space-y-4 text-base">
+              <p className="text-muted-foreground">We retain your data for the following periods:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><strong className="text-foreground">Account Data:</strong> Retained while your account is active</li>
+                <li><strong className="text-foreground">Transaction Records:</strong> Retained for 7 years for legal/tax compliance</li>
+                <li><strong className="text-foreground">Analytics Data:</strong> Anonymized after 24 months</li>
+                <li><strong className="text-foreground">Deleted Accounts:</strong> Personal data erased within 90 days of deletion request</li>
+                <li><strong className="text-foreground">Blockchain Data:</strong> On-chain transactions are permanent and cannot be deleted</li>
               </ul>
             </CardContent>
           </Card>
