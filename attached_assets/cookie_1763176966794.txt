@@ -1,0 +1,28 @@
+<!-- Simple Cookie Consent Banner -->
+<div id="cookie-banner" style="display:none; position: fixed; bottom: 0; left: 0; right: 0; background: #1F2937; padding: 20px; text-align: center; z-index: 9999;">
+    <p style="color: #E5E7EB; margin-bottom: 10px;">
+        We use cookies and similar technologies to improve your experience and analyze app usage. 
+        By clicking "Accept", you consent to our use of cookies.
+        <a href="/privacy" style="color: #8B5CF6;">Learn more</a>
+    </p>
+    <button onclick="acceptCookies()" style="background: #8B5CF6; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">Accept All</button>
+    <button onclick="rejectCookies()" style="background: #374151; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Reject Non-Essential</button>
+</div>
+
+<script>
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+function rejectCookies() {
+    localStorage.setItem('cookieConsent', 'rejected');
+    document.getElementById('cookie-banner').style.display = 'none';
+    // Disable analytics
+}
+
+// Show banner if consent not given
+if (!localStorage.getItem('cookieConsent')) {
+    document.getElementById('cookie-banner').style.display = 'block';
+}
+</script>

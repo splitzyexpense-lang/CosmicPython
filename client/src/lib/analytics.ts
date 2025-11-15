@@ -15,17 +15,24 @@ export const initGA = () => {
     return;
   }
 
+  // Check cookie consent
+  const cookieConsent = localStorage.getItem('cookieConsent');
+  const analyticsStorage = cookieConsent === 'accepted' ? 'granted' : 'denied';
+
   // Add Google Analytics script to the head
   const script1 = document.createElement('script');
   script1.async = true;
   script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
   document.head.appendChild(script1);
 
-  // Initialize gtag
+  // Initialize gtag with consent mode
   const script2 = document.createElement('script');
   script2.textContent = `
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': '${analyticsStorage}'
+    });
     gtag('js', new Date());
     gtag('config', '${measurementId}');
   `;

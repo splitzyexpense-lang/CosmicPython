@@ -27,6 +27,7 @@ import Referral from "@/pages/referral";
 
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { CookieConsent } from "@/components/cookie-consent";
 
 function Router() {
   // Track page views when routes change
@@ -81,6 +82,7 @@ function App() {
       <TooltipProvider>
         <Router />
         <Toaster />
+        <CookieConsent />
       </TooltipProvider>
     </QueryClientProvider>
   );
