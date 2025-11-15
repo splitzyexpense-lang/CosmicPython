@@ -10,7 +10,7 @@ export default function Terms() {
             Astralux Terms of Service
           </h1>
           <p className="text-xl text-muted-foreground">
-            Last Updated: September 24, 2025
+            Last Updated: November 15, 2025
           </p>
         </div>
 
