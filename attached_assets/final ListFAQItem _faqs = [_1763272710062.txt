@@ -1,0 +1,194 @@
+final List<FAQItem> _faqs = [
+    // Getting Started
+    FAQItem(
+      category: 'Getting Started',
+      question: 'What is Astralux?',
+      answer: 'Astralux is a mobile cryptocurrency mining app that allows you to earn ASLX tokens by watching ads. It\'s a legitimate way to enter the crypto world without any investment. ASLX is a real token on the Polygon blockchain that you fully own and control.',
+    ),
+    FAQItem(
+      category: 'Getting Started',
+      question: 'How do I start earning?',
+      answer: 'Simply open the app, go to the Mine screen, and tap the Mine button every hour. You\'ll watch a short ad (15-30 seconds) and earn tokens instantly. The more consistent you are, the more you earn through daily streak bonuses!',
+    ),
+    FAQItem(
+      category: 'Getting Started',
+      question: 'Do I need to invest money?',
+      answer: 'No! Astralux is 100% free. You don\'t need to deposit money, buy tokens, or pay any fees. Your only "investment" is watching ads, which takes less than 30 seconds per hour.',
+    ),
+
+    // Mining
+    FAQItem(
+      category: 'Mining',
+      question: 'How does mining work?',
+      answer: 'Mining in Astralux means watching a rewarded ad every hour. When you tap Mine, you watch a 15-30 second advertisement, and in return, you receive mini tokens. It\'s not traditional crypto mining (no computing power needed) - it\'s ad-supported mining.',
+    ),
+    FAQItem(
+      category: 'Mining',
+      question: 'How much can I earn per hour?',
+      answer: 'You earn 1 mini token per hour through regular mining. With daily streak bonuses, this increases significantly. A 10-day streak gives you an extra 100 mini tokens as a bonus reward. Consistency is key!',
+    ),
+    FAQItem(
+      category: 'Mining',
+      question: 'What is the daily streak bonus?',
+      answer: 'If you mine at least once per day for 10 consecutive days, you receive a 100 mini token bonus! The streak counter resets if you miss a day, so try to mine daily. You can mine multiple times per day, but one mine per day maintains your streak.',
+    ),
+    FAQItem(
+      category: 'Mining',
+      question: 'Why can I only mine once per hour?',
+      answer: 'The 1-hour cooldown prevents abuse and ensures fair distribution of tokens. It also helps us manage ad inventory and keeps the token economy sustainable. This model is similar to apps like Pi Network.',
+    ),
+
+    // Ads & Revenue
+    FAQItem(
+      category: 'Ads & Revenue',
+      question: 'Why do I need to watch ads?',
+      answer: 'Ads are the revenue source that makes Astralux FREE for you. When you watch an ad, advertisers pay us, and we share that revenue with you in the form of ASLX tokens. This is how we can offer real cryptocurrency without you investing money.\n\nAd revenue also covers:\n• Transaction fees on the Polygon blockchain\n• Server and infrastructure costs\n• Future exchange listing fees (CoinGecko, CoinMarketCap)\n• Development and maintenance\n• Marketing to grow the community',
+    ),
+    FAQItem(
+      category: 'Ads & Revenue',
+      question: 'How does Astralux make money?',
+      answer: 'We earn a small portion from ads while distributing most of the revenue to users as tokens. We also retain a percentage of tokens for:\n• Liquidity pool provision\n• Team development fund\n• Marketing and partnerships\n• Exchange listing reserves\n\nThis model ensures long-term sustainability while keeping the app free for users.',
+    ),
+    FAQItem(
+      category: 'Ads & Revenue',
+      question: 'What if ads don\'t load?',
+      answer: 'We use multiple ad networks (AdMob, Unity Ads, AppLovin) to ensure 95%+ ad availability. If an ad fails to load:\n• Check your internet connection\n• Try again in a few seconds\n• Ensure you\'re not using a VPN that blocks ads\n• Update the app to the latest version\n\nAds are essential for the app to work - without ad revenue, we can\'t distribute tokens.',
+    ),
+    FAQItem(
+      category: 'Ads & Revenue',
+      question: 'Are ads safe?',
+      answer: 'Yes! We only work with reputable ad networks (Google AdMob, Unity, AppLovin) that strictly screen advertisers. All ads are reviewed before being shown. We never show:\n• Malware or phishing ads\n• Adult content\n• Scam or fraudulent offers\n\nYour safety is our priority.',
+    ),
+
+    // Wallet & Security
+    FAQItem(
+      category: 'Wallet & Security',
+      question: 'Is my wallet secure?',
+      answer: 'Extremely secure! Your wallet uses:\n• Bank-level encryption\n• Biometric authentication (fingerprint/face ID)\n• Local storage (keys never leave your device)\n• Industry-standard HD wallet technology\n\nYour private keys are stored ONLY on your device. We never have access to your funds - you have complete control.',
+    ),
+    FAQItem(
+      category: 'Wallet & Security',
+      question: 'What is a seed phrase and why is it important?',
+      answer: 'Your seed phrase (24 words) is the master key to your wallet. It allows you to:\n• Recover your wallet if you lose your phone\n• Import your wallet to MetaMask or other apps\n• Access your tokens from anywhere\n\n⚠️ CRITICAL: Write down your seed phrase on paper and store it safely. Never share it with anyone, including Astralux support. Anyone with your seed phrase can access your funds!',
+    ),
+    FAQItem(
+      category: 'Wallet & Security',
+      question: 'Can I use my wallet in MetaMask?',
+      answer: 'Yes! Your Astralux wallet is a real Ethereum-compatible wallet on Polygon. You can:\n1. Export your seed phrase from Settings\n2. Import it into MetaMask or Trust Wallet\n3. See the same tokens and address\n4. Send tokens anywhere\n\nThis proves you truly own your crypto - not us!',
+    ),
+    FAQItem(
+      category: 'Wallet & Security',
+      question: 'What if I lose my phone?',
+      answer: 'If you have your 24-word seed phrase saved:\n1. Install Astralux on your new phone\n2. Import wallet using your seed phrase\n3. All your tokens will be restored\n\nWithout the seed phrase, funds are PERMANENTLY LOST. This is how true crypto ownership works - no company can recover your funds.',
+    ),
+
+    // Conversion & Withdrawal
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'How do I convert mini tokens to ASLX?',
+      answer: 'Go to the Wallet screen and tap "Convert". The conversion rate is:\n• 1000 mini = 1 ASLX\n\nOnce converted, ASLX tokens are real cryptocurrency on the Polygon blockchain. You can hold them, transfer them, or eventually sell them on exchanges.',
+    ),
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'Why do I need phone verification?',
+      answer: 'Phone verification (one-time only) is required to withdraw ASLX tokens to external wallets. This:\n• Prevents bot abuse and multi-accounting\n• Ensures one person = one account\n• Protects the token economy\n• Complies with anti-fraud regulations\n\nYou need 200 ASLX to unlock phone verification. Your number is private and never shared.',
+    ),
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'Can I withdraw tokens to my bank account?',
+      answer: 'Not directly. ASLX is cryptocurrency, not fiat money. To get cash:\n1. Accumulate ASLX tokens\n2. Wait for exchange listings (CoinGecko, Uniswap)\n3. Transfer ASLX to an exchange\n4. Sell ASLX for USDC or MATIC\n5. Withdraw to your bank via the exchange\n\nThis is standard for all cryptocurrencies. We\'re working on exchange listings!',
+    ),
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'When can I sell ASLX tokens?',
+      answer: 'ASLX will be listed on exchanges once we:\n• Reach sufficient user base (target: 10,000+ users)\n• Create liquidity pools on QuickSwap (Polygon DEX)\n• Apply for CoinGecko and CoinMarketCap listings\n• Partner with centralized exchanges\n\nYou can track our progress in the Feeds section. Token listings typically take 3-6 months for new projects.',
+    ),
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'What are transaction fees?',
+      answer: 'Blockchain transactions require "gas fees" paid in MATIC (Polygon\'s native token). Fees are very low on Polygon:\n• Conversion: ~\$0.01\n• Withdrawal: ~\$0.02-0.05\n• Transfers: ~\$0.01-0.03\n\nAd revenue helps cover these fees. You may need a tiny amount of MATIC in your wallet for withdrawals.',
+    ),
+
+    // Referrals
+    FAQItem(
+      category: 'Referrals',
+      question: 'How does the referral system work?',
+      answer: 'Share your unique referral code with friends. When they:\n1. Sign up using your code\n2. Mine regularly and reach 200 ASLX balance\n3. You receive 250 mini tokens as a bonus!\n\nUnlimited referrals = unlimited earning potential. Help friends discover crypto while earning!',
+    ),
+    FAQItem(
+      category: 'Referrals',
+      question: 'Why haven\'t I received my referral bonus?',
+      answer: 'You receive the bonus ONLY when your referral reaches 200 ASLX. This ensures:\n• Real, active users (not fake accounts)\n• Fair rewards for genuine referrals\n• Sustainable token economy\n\nTrack your referrals\' progress in the Referrals screen.',
+    ),
+    FAQItem(
+      category: 'Referrals',
+      question: 'Can I refer myself with multiple accounts?',
+      answer: 'No. Multi-accounting violates our Terms of Service and can result in:\n• Account suspension\n• Forfeiture of all tokens\n• Ban from the platform\n\nPhone verification prevents multi-accounting. Play fair - there\'s enough for everyone!',
+    ),
+
+    // Legitimacy & Trust
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'Is Astralux a scam?',
+      answer: 'No! Here\'s proof of legitimacy:\n\n✅ Real Blockchain Contract: ASLX exists on Polygon mainnet (verifiable on PolygonScan)\n✅ Non-Custodial Wallet: You control your private keys, not us\n✅ Transparent Tokenomics: Fixed supply, no hidden pre-mine\n✅ Open Source Intent: Code will be open-sourced after launch\n✅ No Investment Required: 100% free, no deposits\n✅ Export Seed Phrase: Proves you own the crypto\n✅ Real Ad Revenue: Sustainable business model\n\nScams require money upfront - we don\'t. You can verify everything on the blockchain!',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'What makes Astralux different from other mining apps?',
+      answer: 'Key differences:\n\n1. REAL CRYPTO: ASLX is on Polygon blockchain, not fake in-app points\n2. TRUE OWNERSHIP: Export your seed phrase, use in MetaMask\n3. NO INVESTMENT: Free forever, ads pay for everything\n4. TRANSPARENT: Verify contract on PolygonScan\n5. SUSTAINABLE: Ad-supported model, not pyramid scheme\n6. SECURITY FIRST: Bank-level encryption, biometric auth\n7. FAST WITHDRAWALS: Polygon = cheap, fast transactions\n8. FAIR DISTRIBUTION: No pre-sale, no team dump\n\nMany "mining" apps give fake points with no blockchain backing. Astralux uses real blockchain technology.',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'How is this not a Ponzi scheme?',
+      answer: 'Ponzi schemes:\n• Require money investment\n• Pay old users with new users\' money\n• Collapse when new users stop joining\n\nAstralux:\n• FREE - no investment\n• Revenue from ads (external source)\n• Sustainable regardless of new users\n• Real blockchain token with utility\n\nOur model is similar to free-to-play games (ad-supported) but with crypto rewards instead of in-game currency.',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'Where can I verify the ASLX token?',
+      answer: 'ASLX is verifiable on Polygon blockchain:\n\n1. Go to polygonscan.com\n2. Search for ASLX token contract address\n3. See all transactions, supply, holders\n4. Verify it\'s a real ERC-20 token\n\nContract address is available in app Settings. This transparency is impossible with fake apps!',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'Who is behind Astralux?',
+      answer: 'Astralux is developed by a crypto-focused team with:\n• Blockchain development experience\n• Commitment to fair distribution\n• Transparent communication\n• Community-first approach\n\nWe\'re building a sustainable crypto ecosystem where everyone can participate without financial barriers. Updates and roadmap are shared in the Feeds section.',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'What if Astralux shuts down?',
+      answer: 'Even if the app shuts down, YOUR TOKENS ARE SAFE because:\n• They exist on Polygon blockchain (permanent)\n• You have the seed phrase (full control)\n• You can import to MetaMask anytime\n• Tokens can be traded on DEXs\n\nThis is the power of decentralization - no single company controls your funds!',
+    ),
+    FAQItem(
+      category: 'Legitimacy & Trust',
+      question: 'Why should I trust Astralux over competitors?',
+      answer: 'Trust factors:\n\n1. VERIFIABLE: Check blockchain yourself\n2. NON-CUSTODIAL: We can\'t access your funds\n3. NO MONEY REQUIRED: Zero financial risk\n4. TRANSPARENT: Open about tokenomics and revenue\n5. SECURITY FOCUSED: Industry-standard encryption\n6. AD-SUPPORTED: Real, sustainable revenue model\n7. COMMUNITY DRIVEN: User feedback shapes development\n8. EXPORT FRIENDLY: Take your tokens anywhere\n\nDon\'t just trust us - verify everything on the blockchain!',
+    ),
+
+    // Additional Common Questions
+    FAQItem(
+      category: 'Mining',
+      question: 'Can I mine on multiple devices?',
+      answer: 'No. One account per person is enforced through phone verification. Mining on multiple devices with the same account won\'t give extra rewards - the cooldown is account-based, not device-based.',
+    ),
+    FAQItem(
+      category: 'Wallet & Security',
+      question: 'What is Polygon network?',
+      answer: 'Polygon is a Layer 2 scaling solution for Ethereum. Benefits:\n• 100x cheaper fees than Ethereum\n• Faster transactions (2-3 seconds)\n• Same security as Ethereum\n• Compatible with MetaMask\n• Growing ecosystem\n\nWe chose Polygon for affordability - you can actually use your tokens without expensive fees!',
+    ),
+    FAQItem(
+      category: 'Conversion & Withdrawal',
+      question: 'How long do withdrawals take?',
+      answer: 'Withdrawals on Polygon are fast:\n• Transaction confirmation: 2-3 seconds\n• Visible in destination wallet: 5-10 seconds\n• Fully confirmed: ~30 seconds\n\nMuch faster than Bitcoin (10+ minutes) or Ethereum (2-5 minutes)!',
+    ),
+    FAQItem(
+      category: 'Getting Started',
+      question: 'What are the system requirements?',
+      answer: 'Minimum requirements:\n• Android 7.0 or higher\n• 100MB free storage\n• Internet connection (WiFi or mobile data)\n• Google Play Services\n\nRecommended:\n• Android 10+\n• Stable internet connection\n• Biometric authentication enabled',
+    ),
+  ];
+
+  List<FAQItem> get _filteredFAQs {
+    if (_selectedCategory == 'All') {
+      return _faqs;
+    }
+    return _faqs.where((faq) => faq.category == _selectedCategory).toList();
+  }
