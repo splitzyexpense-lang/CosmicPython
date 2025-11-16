@@ -74,6 +74,10 @@ export const faqData = [
     question: "What is Polygon network?",
     answer: "Polygon is a Layer 2 scaling solution for Ethereum. Benefits:<br/>• 100x cheaper fees than Ethereum<br/>• Faster transactions (2-3 seconds)<br/>• Same security as Ethereum<br/>• Compatible with MetaMask<br/>• Growing ecosystem<br/><br/>We chose Polygon for affordability - you can actually use your tokens without expensive fees!"
   },
+  {
+    question: "Why is my balance sometimes slow to load?",
+    answer: "Yes, it's normal to occasionally have issues fetching blockchain data. Network latency, RPC rate limits, and chain congestion can cause delays. The app automatically:<br/>• Retries with multiple RPC endpoints<br/>• Uses exponential backoff between retries<br/>• Caches recent balance data<br/><br/>If balance doesn't load, tap the refresh button. The blockchain is decentralized, so occasional delays are expected - your tokens are always safe on-chain!"
+  },
 
   // Conversion & Withdrawal
   {
