@@ -24,6 +24,7 @@ import Terms from "@/pages/terms";
 import Whitepaper from "@/pages/whitepaper";
 import Team from "@/pages/team";
 import Referral from "@/pages/referral";
+import DeleteAccount from "@/pages/delete-account";
 
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -56,6 +57,7 @@ function Router() {
           <Route path="/support" component={Support} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/terms" component={Terms} />
+          <Route path="/delete-account" component={DeleteAccount} />
           <Route path="/whitepaper" component={Whitepaper} />
           <Route path="/team" component={Team} />
           <Route component={NotFound} />
