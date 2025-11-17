@@ -33,6 +33,7 @@ const footerSections = [
     links: [
       { name: "Privacy Policy", href: "/privacy" },
       { name: "Terms of Service", href: "/terms" },
+      { name: "Delete Account", href: "/delete-account" },
     ],
   },
 ];
