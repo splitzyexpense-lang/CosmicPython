@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, Mail, Trash2, Database, Shield } from "lucide-react";
+import { AlertCircle, Mail, Trash2, Database, Shield, Smartphone } from "lucide-react";
 
 export default function DeleteAccount() {
   return (
@@ -38,6 +38,26 @@ export default function DeleteAccount() {
               </p>
               <p className="text-muted-foreground">
                 Your wallet address and all associated token transfers, conversions, and withdrawals will remain publicly visible on PolygonScan and other blockchain explorers forever.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Delete From App */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-start gap-3">
+                <Smartphone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <CardTitle>Delete Account from the App</CardTitle>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                Users can delete their entire account directly from the app's Settings screen using the <strong>"Delete Account"</strong> button.
+              </p>
+              <p className="text-muted-foreground">
+                This is the quickest and easiest way to delete your Astralux account. The in-app deletion process will immediately remove your account and all associated data from our systems.
               </p>
             </CardContent>
           </Card>
