@@ -32,7 +32,7 @@ export default function DeleteAccount() {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 While we can delete your personal account data, <strong>blockchain transactions cannot be erased</strong>. All ASLX token transactions on the Polygon network are permanently recorded on a public, decentralized ledger. This is a fundamental characteristic of blockchain technology—not a limitation of Astralux.
               </p>
@@ -52,7 +52,7 @@ export default function DeleteAccount() {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 Users can delete their entire account directly from the app's Settings screen using the <strong>"Delete Account"</strong> button.
               </p>
@@ -72,7 +72,7 @@ export default function DeleteAccount() {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>To delete your Astralux account, please send an email request to:</p>
               <div className="not-prose my-6">
                 <Button 
@@ -111,7 +111,7 @@ export default function DeleteAccount() {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 Upon receiving your deletion request, we will delete most of your personal data <strong>within 30 days</strong>. However, some data retention is required by law or is technically impossible to delete.
               </p>
@@ -125,7 +125,7 @@ export default function DeleteAccount() {
                 ✓ Data We Will Delete
               </CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>The following personal information will be permanently removed from our systems:</p>
               <ul>
                 <li><strong>Email Address:</strong> Your Google Sign-In email and associated authentication data</li>
@@ -154,7 +154,7 @@ export default function DeleteAccount() {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 The following information is <strong>permanently stored on the Polygon blockchain</strong> and cannot be deleted by Astralux or any other entity:
               </p>
@@ -179,7 +179,7 @@ export default function DeleteAccount() {
             <CardHeader>
               <CardTitle>Your Wallet and Tokens Remain Under Your Control</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 <strong>Important:</strong> Deleting your Astralux account does not delete your cryptocurrency wallet or tokens. Your wallet is a real Ethereum-compatible wallet on the Polygon blockchain that exists independently of Astralux.
               </p>
@@ -203,7 +203,7 @@ export default function DeleteAccount() {
             <CardHeader>
               <CardTitle>Your GDPR Rights</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 Under the General Data Protection Regulation (GDPR) and similar data protection laws, you have the right to:
               </p>
@@ -228,7 +228,7 @@ export default function DeleteAccount() {
             <CardHeader>
               <CardTitle>Questions About Account Deletion?</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-lg dark:prose-invert max-w-none text-left">
+            <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 If you have questions about account deletion, data retention, or your privacy rights, please contact our support team:
               </p>
